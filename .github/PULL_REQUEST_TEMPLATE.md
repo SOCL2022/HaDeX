@@ -10,4 +10,9 @@
 ```
 
 ## Pull Request Type
-What kind of change does this Pull Request introdu
+What kind of change does this Pull Request introduce?
+
+<!-- Please check the one that applies to this PR using "x". -->
+```
+[ ] Bugfix
+[ ]
