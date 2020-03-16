@@ -32,4 +32,9 @@ git checkout [branch-name]
 npm install
 ```
 
-* Te
+* Test the code
+<!-- Add steps to run the tests suite and/or manually test -->
+```
+```
+
+## What to Ch
