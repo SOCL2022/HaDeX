@@ -37,4 +37,9 @@ npm install
 ```
 ```
 
-## What to Ch
+## What to Check
+Verify that the following are valid
+* ...
+
+## Other Information
+<!-- Add any other helpful informati
