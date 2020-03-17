@@ -6,4 +6,8 @@
 *Features*
 * ...
 
-*Bu
+*Bug Fixes*
+* ...
+
+*Breaking Changes*
+* ...
