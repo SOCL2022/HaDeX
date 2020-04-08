@@ -9,4 +9,5 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 ## Features
 
 * Chat and Q&A interfaces
-* Explores various options to help users evaluate the trustworthiness of responses
+* Explores various options to help users evaluate the trustworthiness of responses with citations, tracking of source content, etc.
+* Shows possible approaches for data preparation, prompt constru
