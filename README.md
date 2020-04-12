@@ -17,4 +17,8 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 
 ## Getting Started
 
-> **IMPORTANT:** In order to deploy and run this example, you'll need an **Azure subscription with access enabled for the Azure OpenAI service**. You can reques
+> **IMPORTANT:** In order to deploy and run this example, you'll need an **Azure subscription with access enabled for the Azure OpenAI service**. You can request access [here](https://aka.ms/oaiapply).
+
+### Prerequisites
+
+- Azure Developer CLI (instal
