@@ -23,4 +23,5 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 
 - Azure Developer CLI (install from [here](https://aka.ms/azure-dev/install))
 - Python (install from [here](https://www.python.org/downloads/))
-    - **Imporant**: Python and the pip package manager must be in the path in
+    - **Imporant**: Python and the pip package manager must be in the path in Windows for the setup scripts to work.
+- Node.js (install from [here](https://nodejs.or
