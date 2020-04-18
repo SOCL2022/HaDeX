@@ -29,4 +29,8 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 - Powershell (pwsh) (install from [here](https://github.com/powershell/powershell))
    - **Imporant**: Ensure you can run pwsh.exe from a PowerShell command. If this fails, you likely need to upgrade PowerShell.
 
-### In
+### Installation
+
+Starting from scratch:
+1. Create a new folder and switch to it in the terminal
+2. Run "azd up -t azure-se
