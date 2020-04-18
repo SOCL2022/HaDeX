@@ -27,4 +27,6 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 - Node.js (install from [here](https://nodejs.org/en/download/))
 - Git (install from [here](https://git-scm.com/downloads))
 - Powershell (pwsh) (install from [here](https://github.com/powershell/powershell))
-   - **Imporant**: Ensure you c
+   - **Imporant**: Ensure you can run pwsh.exe from a PowerShell command. If this fails, you likely need to upgrade PowerShell.
+
+### In
