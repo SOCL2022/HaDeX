@@ -26,4 +26,5 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
     - **Imporant**: Python and the pip package manager must be in the path in Windows for the setup scripts to work.
 - Node.js (install from [here](https://nodejs.org/en/download/))
 - Git (install from [here](https://git-scm.com/downloads))
-- Powershell (pwsh) (install 
+- Powershell (pwsh) (install from [here](https://github.com/powershell/powershell))
+   - **Imporant**: Ensure you c
