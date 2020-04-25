@@ -34,4 +34,10 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 Starting from scratch:
 1. Create a new folder and switch to it in the terminal
 2. Run "azd up -t azure-search-openai-demo"
-    * For the target location, the regions that currently support the models used in this sample are East US or South Central US. For an up-to-date list of regions and models, check [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models
+    * For the target location, the regions that currently support the models used in this sample are East US or South Central US. For an up-to-date list of regions and models, check [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models)
+
+Deploying or re-deploying a local clone of the repo:
+* Simply run "azd up"
+
+Running locally:
+* Ru
