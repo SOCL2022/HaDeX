@@ -40,4 +40,6 @@ Deploying or re-deploying a local clone of the repo:
 * Simply run "azd up"
 
 Running locally:
-* Run `./app/start.cmd` or run the "VS Code Task: Start App" to start the project locally
+* Run `./app/start.cmd` or run the "VS Code Task: Start App" to start the project locally.
+
+** AZURE RESOURCE COSTS ** by default this sample will create Azure App Service and Azure Cognitive 
