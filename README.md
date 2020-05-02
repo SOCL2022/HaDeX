@@ -47,4 +47,7 @@ Running locally:
 ### Quickstart
 
 * In Azure: navigate to the Azure WebApp deployed by azd. The URL is printed out when azd completes (as "Endpoint"), or you can find it in the Azure portal.
-* Running locally: n
+* Running locally: navigate to 127.0.0.1:5000
+
+Once in the web app:
+* Try different topics in chat or Q&A context. For chat
