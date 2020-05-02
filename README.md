@@ -46,4 +46,5 @@ Running locally:
 
 ### Quickstart
 
-* In Azure: navigate to the Azure WebApp deployed by azd. The URL is printed o
+* In Azure: navigate to the Azure WebApp deployed by azd. The URL is printed out when azd completes (as "Endpoint"), or you can find it in the Azure portal.
+* Running locally: n
