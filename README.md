@@ -51,4 +51,7 @@ Running locally:
 
 Once in the web app:
 * Try different topics in chat or Q&A context. For chat, try follow up questions, clarifications, ask to simplify or elaborate on answer, etc.
-* Explore
+* Explore citations and sources
+* Click on "settings" to try different options, tweak prompts, etc.
+
+##
