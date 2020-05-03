@@ -50,4 +50,5 @@ Running locally:
 * Running locally: navigate to 127.0.0.1:5000
 
 Once in the web app:
-* Try different topics in chat or Q&A context. For chat
+* Try different topics in chat or Q&A context. For chat, try follow up questions, clarifications, ask to simplify or elaborate on answer, etc.
+* Explore
