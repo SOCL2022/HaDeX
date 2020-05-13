@@ -54,4 +54,6 @@ Once in the web app:
 * Explore citations and sources
 * Click on "settings" to try different options, tweak prompts, etc.
 
-##
+## Resources
+
+* [Revolutionize your Enterprise Data with ChatGPT: Next-gen Apps w/ Azure OpenAI and Cogn
