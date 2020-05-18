@@ -61,4 +61,4 @@ Once in the web app:
 * [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/overview)
 
 ### Note
->Note: The PDF documents used in this demo contain informa
+>Note: The PDF documents used in this demo contain information generated using a language model (Azure OpenAI Service). The information contained in these docu
