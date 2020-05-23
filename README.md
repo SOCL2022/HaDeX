@@ -67,4 +67,4 @@ Once in the web app:
 
 ***Question***: Why do we need to break up the PDFs into chunks when Azure Cognitive Search supports searching large documents?
 
-***Ans
+***Answer***: Chunking allows us to limit the amount of information we send to OpenAI due to token limits. By breaking up 
