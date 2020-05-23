@@ -65,4 +65,6 @@ Once in the web app:
 
 ### FAQ
 
-***Question***: Why do we need 
+***Question***: Why do we need to break up the PDFs into chunks when Azure Cognitive Search supports searching large documents?
+
+***Ans
