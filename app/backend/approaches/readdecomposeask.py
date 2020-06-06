@@ -5,4 +5,6 @@ from azure.search.documents.models import QueryType
 from langchain.llms.openai import AzureOpenAI
 from langchain.prompts import PromptTemplate, BasePromptTemplate
 from langchain.callbacks.base import CallbackManager
-from langchain.
+from langchain.agents import Tool, AgentExecutor
+from langchain.agents.react.base import ReActDocstoreAgent
+from
