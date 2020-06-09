@@ -7,4 +7,6 @@ from langchain.prompts import PromptTemplate, BasePromptTemplate
 from langchain.callbacks.base import CallbackManager
 from langchain.agents import Tool, AgentExecutor
 from langchain.agents.react.base import ReActDocstoreAgent
-from
+from langchainadapters import HtmlCallbackHandler
+from text import nonewlines
+from typing impo
