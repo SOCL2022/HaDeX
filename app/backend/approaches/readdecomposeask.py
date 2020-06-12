@@ -9,4 +9,7 @@ from langchain.agents import Tool, AgentExecutor
 from langchain.agents.react.base import ReActDocstoreAgent
 from langchainadapters import HtmlCallbackHandler
 from text import nonewlines
-from typing impo
+from typing import List
+
+class ReadDecomposeAsk(Approach):
+    def __init__(self, search_client: SearchClient
