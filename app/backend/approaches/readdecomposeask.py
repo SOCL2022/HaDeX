@@ -12,4 +12,5 @@ from text import nonewlines
 from typing import List
 
 class ReadDecomposeAsk(Approach):
-    def __init__(self, search_client: SearchClient
+    def __init__(self, search_client: SearchClient, openai_deployment: str, sourcepage_field: str, content_field: str):
+        self.search_client
