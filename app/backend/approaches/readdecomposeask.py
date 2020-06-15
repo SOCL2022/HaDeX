@@ -15,4 +15,7 @@ class ReadDecomposeAsk(Approach):
     def __init__(self, search_client: SearchClient, openai_deployment: str, sourcepage_field: str, content_field: str):
         self.search_client = search_client
         self.openai_deployment = openai_deployment
-        self.sourcepag
+        self.sourcepage_field = sourcepage_field
+        self.content_field = content_field
+
+    def search(self
