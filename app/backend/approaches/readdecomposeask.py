@@ -18,4 +18,5 @@ class ReadDecomposeAsk(Approach):
         self.sourcepage_field = sourcepage_field
         self.content_field = content_field
 
-    def search(self
+    def search(self, q: str, overrides: dict) -> str:
+        use_semantic_captions = True if overrides.get("semantic_capt
