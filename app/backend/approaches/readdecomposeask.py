@@ -21,4 +21,5 @@ class ReadDecomposeAsk(Approach):
     def search(self, q: str, overrides: dict) -> str:
         use_semantic_captions = True if overrides.get("semantic_captions") else False
         top = overrides.get("top") or 3
-        exclude_category = overri
+        exclude_category = overrides.get("exclude_category") or None
+        filter = "category ne '{}'".format(exclude_category.replac
