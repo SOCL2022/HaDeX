@@ -26,4 +26,6 @@ class ReadDecomposeAsk(Approach):
 
         if overrides.get("semantic_ranker"):
             r = self.search_client.search(q,
-                                          filter=filt
+                                          filter=filter,
+                                          query_type=QueryType.SEMANTIC, 
+          
