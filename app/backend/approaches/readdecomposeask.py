@@ -24,4 +24,6 @@ class ReadDecomposeAsk(Approach):
         exclude_category = overrides.get("exclude_category") or None
         filter = "category ne '{}'".format(exclude_category.replace("'", "''")) if exclude_category else None
 
-        if overrides.get("semantic_ran
+        if overrides.get("semantic_ranker"):
+            r = self.search_client.search(q,
+                                          filter=filt
