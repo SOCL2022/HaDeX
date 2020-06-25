@@ -28,4 +28,5 @@ class ReadDecomposeAsk(Approach):
             r = self.search_client.search(q,
                                           filter=filter,
                                           query_type=QueryType.SEMANTIC, 
-          
+                                          query_language="en-us", 
+                                      
