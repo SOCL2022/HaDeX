@@ -29,4 +29,5 @@ class ReadDecomposeAsk(Approach):
                                           filter=filter,
                                           query_type=QueryType.SEMANTIC, 
                                           query_language="en-us", 
-                                      
+                                          query_speller="lexicon", 
+                                          semantic_co
