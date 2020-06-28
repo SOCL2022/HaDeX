@@ -32,4 +32,4 @@ class ReadDecomposeAsk(Approach):
                                           query_speller="lexicon", 
                                           semantic_configuration_name="default", 
                                           top = top,
-             
+                                          query_caption="extractive|highlight-false" if use_semantic_captions else
