@@ -35,4 +35,5 @@ class ReadDecomposeAsk(Approach):
                                           query_caption="extractive|highlight-false" if use_semantic_captions else None)
         else:
             r = self.search_client.search(q, filter=filter, top=top)
-        if use_semantic
+        if use_semantic_captions:
+            self.results = [doc[self.sourcepage_field] + ":" + nonewlines(" . ".join(
