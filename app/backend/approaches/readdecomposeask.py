@@ -42,4 +42,6 @@ class ReadDecomposeAsk(Approach):
         return "\n".join(self.results)
 
     def lookup(self, q: str) -> str:
-        r = self.search_c
+        r = self.search_client.search(q,
+                                      top = 1,
+                                      include_total
