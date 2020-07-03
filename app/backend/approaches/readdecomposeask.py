@@ -44,4 +44,6 @@ class ReadDecomposeAsk(Approach):
     def lookup(self, q: str) -> str:
         r = self.search_client.search(q,
                                       top = 1,
-                                      include_total
+                                      include_total_count=True,
+                                      query_type=QueryType.SEMANTIC, 
+                          
