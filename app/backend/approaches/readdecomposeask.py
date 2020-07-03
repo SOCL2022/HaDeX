@@ -39,4 +39,7 @@ class ReadDecomposeAsk(Approach):
             self.results = [doc[self.sourcepage_field] + ":" + nonewlines(" . ".join([c.text for c in doc['@search.captions'] ])) for doc in r]
         else:
             self.results = [doc[self.sourcepage_field] + ":" + nonewlines(doc[self.content_field][:500]) for doc in r]
-        r
+        return "\n".join(self.results)
+
+    def lookup(self, q: str) -> str:
+        r = self.search_c
