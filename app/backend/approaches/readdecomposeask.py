@@ -48,4 +48,5 @@ class ReadDecomposeAsk(Approach):
                                       query_type=QueryType.SEMANTIC, 
                                       query_language="en-us", 
                                       query_speller="lexicon", 
-                   
+                                      semantic_configuration_name="default",
+                       
