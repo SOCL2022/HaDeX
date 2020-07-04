@@ -50,4 +50,7 @@ class ReadDecomposeAsk(Approach):
                                       query_speller="lexicon", 
                                       semantic_configuration_name="default",
                                       query_answer="extractive|count-1",
-                                      q
+                                      query_caption="extractive|highlight-false")
+        
+        answers = r.get_answers()
+        if answers 
