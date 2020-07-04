@@ -49,4 +49,5 @@ class ReadDecomposeAsk(Approach):
                                       query_language="en-us", 
                                       query_speller="lexicon", 
                                       semantic_configuration_name="default",
-                       
+                                      query_answer="extractive|count-1",
+                                      q
