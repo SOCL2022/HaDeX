@@ -59,4 +59,5 @@ class ReadDecomposeAsk(Approach):
             return "\n".join(d['content'] for d in r)
         return None        
 
-    def run(self, q: s
+    def run(self, q: str, overrides: dict) -> any:
+        # Not great to keep this as instance state, won't work with int
