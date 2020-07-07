@@ -53,4 +53,7 @@ class ReadDecomposeAsk(Approach):
                                       query_caption="extractive|highlight-false")
         
         answers = r.get_answers()
-        if answers 
+        if answers and len(answers) > 0:
+            return answers[0].text
+        if r.get_count() > 0:
+         
