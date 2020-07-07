@@ -56,4 +56,7 @@ class ReadDecomposeAsk(Approach):
         if answers and len(answers) > 0:
             return answers[0].text
         if r.get_count() > 0:
-         
+            return "\n".join(d['content'] for d in r)
+        return None        
+
+    def run(self, q: s
