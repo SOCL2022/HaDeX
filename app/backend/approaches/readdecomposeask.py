@@ -60,4 +60,7 @@ class ReadDecomposeAsk(Approach):
         return None        
 
     def run(self, q: str, overrides: dict) -> any:
-        # Not great to keep this as instance state, won't work with int
+        # Not great to keep this as instance state, won't work with interleaving (e.g. if using async), but keeps the example simple
+        self.results = None
+
+      
