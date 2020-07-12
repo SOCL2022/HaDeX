@@ -63,4 +63,6 @@ class ReadDecomposeAsk(Approach):
         # Not great to keep this as instance state, won't work with interleaving (e.g. if using async), but keeps the example simple
         self.results = None
 
-      
+        # Use to capture thought process during iterations
+        cb_handler = HtmlCallbackHandler()
+        cb_man
