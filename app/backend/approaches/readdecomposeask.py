@@ -65,4 +65,6 @@ class ReadDecomposeAsk(Approach):
 
         # Use to capture thought process during iterations
         cb_handler = HtmlCallbackHandler()
-        cb_man
+        cb_manager = CallbackManager(handlers=[cb_handler])
+
+        llm = AzureOpenAI(deployment_name=sel
