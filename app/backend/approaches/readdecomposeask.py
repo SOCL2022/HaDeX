@@ -70,4 +70,7 @@ class ReadDecomposeAsk(Approach):
         llm = AzureOpenAI(deployment_name=self.openai_deployment, temperature=overrides.get("temperature") or 0.3, openai_api_key=openai.api_key)
         tools = [
             Tool(name="Search", func=lambda q: self.search(q, overrides)),
-            Tool(n
+            Tool(name="Lookup", func=self.lookup)
+        ]
+
+        # Like results above, not great to keep this as a gl
