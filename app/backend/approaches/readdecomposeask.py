@@ -68,4 +68,6 @@ class ReadDecomposeAsk(Approach):
         cb_manager = CallbackManager(handlers=[cb_handler])
 
         llm = AzureOpenAI(deployment_name=self.openai_deployment, temperature=overrides.get("temperature") or 0.3, openai_api_key=openai.api_key)
-     
+        tools = [
+            Tool(name="Search", func=lambda q: self.search(q, overrides)),
+            Tool(n
