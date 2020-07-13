@@ -67,4 +67,5 @@ class ReadDecomposeAsk(Approach):
         cb_handler = HtmlCallbackHandler()
         cb_manager = CallbackManager(handlers=[cb_handler])
 
-        llm = AzureOpenAI(deployment_name=sel
+        llm = AzureOpenAI(deployment_name=self.openai_deployment, temperature=overrides.get("temperature") or 0.3, openai_api_key=openai.api_key)
+     
