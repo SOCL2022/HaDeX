@@ -73,4 +73,6 @@ class ReadDecomposeAsk(Approach):
             Tool(name="Lookup", func=self.lookup)
         ]
 
-        # Like results above, not great to keep this as a gl
+        # Like results above, not great to keep this as a global, will interfere with interleaving
+        global prompt
+        prompt_prefix = overrides.get("promp
