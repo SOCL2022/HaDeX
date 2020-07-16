@@ -75,4 +75,6 @@ class ReadDecomposeAsk(Approach):
 
         # Like results above, not great to keep this as a global, will interfere with interleaving
         global prompt
-        prompt_prefix = overrides.get("promp
+        prompt_prefix = overrides.get("prompt_template")
+        prompt = PromptTemplate.from_examples(
+            EXAMPLES, SUFFIX, ["input", "agent_scratchpad
