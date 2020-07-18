@@ -79,4 +79,5 @@ class ReadDecomposeAsk(Approach):
         prompt = PromptTemplate.from_examples(
             EXAMPLES, SUFFIX, ["input", "agent_scratchpad"], prompt_prefix + "\n\n" + PREFIX if prompt_prefix else PREFIX)
 
-        agent = ReAct.from
+        agent = ReAct.from_llm_and_tools(llm, tools)
+        chain = AgentExecutor.from_agent_and_tools(agent, tools, verbose=True, callback_
