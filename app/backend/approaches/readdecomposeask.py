@@ -77,4 +77,6 @@ class ReadDecomposeAsk(Approach):
         global prompt
         prompt_prefix = overrides.get("prompt_template")
         prompt = PromptTemplate.from_examples(
-            EXAMPLES, SUFFIX, ["input", "agent_scratchpad
+            EXAMPLES, SUFFIX, ["input", "agent_scratchpad"], prompt_prefix + "\n\n" + PREFIX if prompt_prefix else PREFIX)
+
+        agent = ReAct.from
