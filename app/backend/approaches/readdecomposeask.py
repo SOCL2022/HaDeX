@@ -83,4 +83,7 @@ class ReadDecomposeAsk(Approach):
         chain = AgentExecutor.from_agent_and_tools(agent, tools, verbose=True, callback_manager=cb_manager)
         result = chain.run(q)
 
-        # Fix up references to they look like what the frontend expects ([] instead of ()), need a better citation format since pare
+        # Fix up references to they look like what the frontend expects ([] instead of ()), need a better citation format since parentheses are so common
+        result = result.replace("(", "[").replace(")", "]")
+
+        return {"data_points": s
