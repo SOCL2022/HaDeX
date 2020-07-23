@@ -90,4 +90,7 @@ class ReadDecomposeAsk(Approach):
     
 class ReAct(ReActDocstoreAgent):
     @classmethod
-    def create_prompt(cls, tools: List[Tool]) ->
+    def create_prompt(cls, tools: List[Tool]) -> BasePromptTemplate:
+        return prompt
+    
+# Modified version of langchain's ReAct
