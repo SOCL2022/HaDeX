@@ -88,3 +88,6 @@ class ReadDecomposeAsk(Approach):
 
         return {"data_points": self.results or [], "answer": result, "thoughts": cb_handler.get_and_reset_log()}
     
+class ReAct(ReActDocstoreAgent):
+    @classmethod
+    def create_prompt(cls, tools: List[Tool]) ->
