@@ -93,4 +93,6 @@ class ReAct(ReActDocstoreAgent):
     def create_prompt(cls, tools: List[Tool]) -> BasePromptTemplate:
         return prompt
     
-# Modified version of langchain's ReAct
+# Modified version of langchain's ReAct prompt that includes instructions and examples for how to cite information sources
+EXAMPLES = [
+    """Que
