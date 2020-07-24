@@ -95,4 +95,5 @@ class ReAct(ReActDocstoreAgent):
     
 # Modified version of langchain's ReAct prompt that includes instructions and examples for how to cite information sources
 EXAMPLES = [
-    """Que
+    """Question: What is the elevation range for the area that the eastern sector of the
+Colorado orogen
