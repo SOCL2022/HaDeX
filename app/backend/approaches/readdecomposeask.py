@@ -103,4 +103,7 @@ area.
 Action 1: Search[Colorado orogeny]
 Observation 1: [info1.pdf] The Colorado orogeny was an episode of mountain building (an orogeny) in
 Colorado and surrounding areas.
-Thought 2: It does not menti
+Thought 2: It does not mention the eastern sector. So I need to look up eastern
+sector.
+Action 2: Lookup[eastern sector]
+Observat
