@@ -118,4 +118,6 @@ Observation 4: [filea.pdf] The High Plains are a subregion of the Great Plains. 
 High Plains rise in elevation from around 1,800 to 7,000 ft (550 to 2,130
 m).
 Thought 5: High Plains rise in elevation from around 1,800 to 7,000 ft, so the answer
-is 1,8
+is 1,800 to 7,000 ft.
+Action 5: Finish[1,800 to 7,000 ft (filea.pdf) ]""",
+    """Question: Musician 
