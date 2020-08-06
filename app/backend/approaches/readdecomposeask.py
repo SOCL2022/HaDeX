@@ -120,4 +120,5 @@ m).
 Thought 5: High Plains rise in elevation from around 1,800 to 7,000 ft, so the answer
 is 1,800 to 7,000 ft.
 Action 5: Finish[1,800 to 7,000 ft (filea.pdf) ]""",
-    """Question: Musician 
+    """Question: Musician and satirist Allie Goertz wrote a song about the "The Simpsons"
+character Milhouse, who Matt Groening named after 
