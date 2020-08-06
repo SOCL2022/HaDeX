@@ -115,4 +115,7 @@ Observation 3: [some_file.pdf] High Plains refers to one of two distinct land re
 Thought 4: I need to instead search High Plains (United States).
 Action 4: Search[High Plains (United States)]
 Observation 4: [filea.pdf] The High Plains are a subregion of the Great Plains. [another-ref.docx] From east to west, the
-High Plains rise in elevation from around 1,800 to 7,000 ft (550 to 2,13
+High Plains rise in elevation from around 1,800 to 7,000 ft (550 to 2,130
+m).
+Thought 5: High Plains rise in elevation from around 1,800 to 7,000 ft, so the answer
+is 1,8
