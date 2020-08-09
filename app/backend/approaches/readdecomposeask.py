@@ -121,4 +121,6 @@ Thought 5: High Plains rise in elevation from around 1,800 to 7,000 ft, so the a
 is 1,800 to 7,000 ft.
 Action 5: Finish[1,800 to 7,000 ft (filea.pdf) ]""",
     """Question: Musician and satirist Allie Goertz wrote a song about the "The Simpsons"
-character Milhouse, who Matt Groening named after 
+character Milhouse, who Matt Groening named after who?
+Thought 1: The question simplifies to "The Simpsons" character Milhouse is named after
+wh
