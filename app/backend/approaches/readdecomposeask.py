@@ -124,4 +124,5 @@ Action 5: Finish[1,800 to 7,000 ft (filea.pdf) ]""",
 character Milhouse, who Matt Groening named after who?
 Thought 1: The question simplifies to "The Simpsons" character Milhouse is named after
 who. I only need to search Milhouse and find who it is named after.
-Action 1: Search[Milho
+Action 1: Search[Milhouse]
+Observation 1: [info7.pdf] Milhouse Mussolini Van Houten is a recurring character in the Fox
