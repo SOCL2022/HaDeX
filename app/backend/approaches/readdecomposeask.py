@@ -133,4 +133,6 @@ Thought 2: The paragraph does not tell who Milhouse is named after, maybe I can 
 Action 2: Lookup[named after]
 Observation 2: [historyref2.txt] (Result 1 / 1) Milhouse was named after U.S. president Richard Nixon, whose
 middle name was Milhous.
-Thought 3: Milhouse wa
+Thought 3: Milhouse was named after U.S. president Richard Nixon, so the answer is
+Richard Nixon.
+Action 3: Finish[Ric
