@@ -131,4 +131,6 @@ Groening.
 Thought 2: The paragraph does not tell who Milhouse is named after, maybe I can look up
 "named after".
 Action 2: Lookup[named after]
-Observation 2: [historyref2.txt] (Result 1 / 1) Milhouse 
+Observation 2: [historyref2.txt] (Result 1 / 1) Milhouse was named after U.S. president Richard Nixon, whose
+middle name was Milhous.
+Thought 3: Milhouse wa
