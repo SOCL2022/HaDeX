@@ -129,3 +129,6 @@ Observation 1: [info7.pdf] Milhouse Mussolini Van Houten is a recurring characte
 television series The Simpsons voiced by Pamela Hayden and created by Matt
 Groening.
 Thought 2: The paragraph does not tell who Milhouse is named after, maybe I can look up
+"named after".
+Action 2: Lookup[named after]
+Observation 2: [historyref2.txt] (Result 1 / 1) Milhouse 
