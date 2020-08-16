@@ -135,4 +135,5 @@ Observation 2: [historyref2.txt] (Result 1 / 1) Milhouse was named after U.S. pr
 middle name was Milhous.
 Thought 3: Milhouse was named after U.S. president Richard Nixon, so the answer is
 Richard Nixon.
-Action 3: Finish[Ric
+Action 3: Finish[Richard Nixon (historyref2.txt) ]""",
+    """Question: Which documentary is about Finnish rock groups, Adam Clayto
