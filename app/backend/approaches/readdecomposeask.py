@@ -136,4 +136,6 @@ middle name was Milhous.
 Thought 3: Milhouse was named after U.S. president Richard Nixon, so the answer is
 Richard Nixon.
 Action 3: Finish[Richard Nixon (historyref2.txt) ]""",
-    """Question: Which documentary is about Finnish rock groups, Adam Clayto
+    """Question: Which documentary is about Finnish rock groups, Adam Clayton Powell or The
+Saimaa Gesture?
+Thought 1: I need to search Adam Clayton Powell and The
