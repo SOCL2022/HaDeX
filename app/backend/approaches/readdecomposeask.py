@@ -138,4 +138,6 @@ Richard Nixon.
 Action 3: Finish[Richard Nixon (historyref2.txt) ]""",
     """Question: Which documentary is about Finnish rock groups, Adam Clayton Powell or The
 Saimaa Gesture?
-Thought 1: I need to search Adam Clayton Powell and The
+Thought 1: I need to search Adam Clayton Powell and The Saimaa Gesture, and find which
+documentary is about Finnish rock groups.
+Action 1: Search[Adam Clayton Po
