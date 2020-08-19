@@ -140,4 +140,5 @@ Action 3: Finish[Richard Nixon (historyref2.txt) ]""",
 Saimaa Gesture?
 Thought 1: I need to search Adam Clayton Powell and The Saimaa Gesture, and find which
 documentary is about Finnish rock groups.
-Action 1: Search[Adam Clayton Po
+Action 1: Search[Adam Clayton Powell]
+Observation 1: [info9.pdf] Could not find [Adam Clayton Powell]. Similar: ['Adam Clayton Powell
