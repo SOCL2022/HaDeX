@@ -147,4 +147,5 @@ Building', 'Isabel Washington Powell', 'Adam Powell', vAdam Clayton Powell
 (film)', 'Giancarlo Esposito'].
 Thought 2: To find the documentary, I can search Adam Clayton Powell (film).
 Action 2: Search[Adam Clayton Powell (film)]
-Ob
+Observation 2: [data123.txt] Adam Clayton Powell is a 1989 American documentary film directed by
+Richard Kilberg. T
