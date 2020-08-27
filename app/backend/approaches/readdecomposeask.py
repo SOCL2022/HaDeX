@@ -148,4 +148,5 @@ Building', 'Isabel Washington Powell', 'Adam Powell', vAdam Clayton Powell
 Thought 2: To find the documentary, I can search Adam Clayton Powell (film).
 Action 2: Search[Adam Clayton Powell (film)]
 Observation 2: [data123.txt] Adam Clayton Powell is a 1989 American documentary film directed by
-Richard Kilberg. T
+Richard Kilberg. The film is about the rise and fall of influential
+African-American politician Adam Clayton Powell Jr.[3]
