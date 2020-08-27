@@ -149,4 +149,6 @@ Thought 2: To find the documentary, I can search Adam Clayton Powell (film).
 Action 2: Search[Adam Clayton Powell (film)]
 Observation 2: [data123.txt] Adam Clayton Powell is a 1989 American documentary film directed by
 Richard Kilberg. The film is about the rise and fall of influential
-African-American politician Adam Clayton Powell Jr.[3]
+African-American politician Adam Clayton Powell Jr.[3][4] It was later aired
+as part of the PBS series The American Experience.
+Thought 3: Adam Clayton Powel
