@@ -152,4 +152,6 @@ Richard Kilberg. The film is about the rise and fall of influential
 African-American politician Adam Clayton Powell Jr.[3][4] It was later aired
 as part of the PBS series The American Experience.
 Thought 3: Adam Clayton Powell (film) is a documentary about an African-American
-politician, not Finnish rock groups. So the documentary
+politician, not Finnish rock groups. So the documentary about Finnish rock
+groups must instead be The Saimaa Gesture.
+Action 3: Finish[The Saimaa Gesture (d
