@@ -154,4 +154,6 @@ as part of the PBS series The American Experience.
 Thought 3: Adam Clayton Powell (film) is a documentary about an African-American
 politician, not Finnish rock groups. So the documentary about Finnish rock
 groups must instead be The Saimaa Gesture.
-Action 3: Finish[The Saimaa Gesture (d
+Action 3: Finish[The Saimaa Gesture (data123.txt) ]""",
+    """Question: What profession does Nicholas Ray and Elia Kazan have in common?
+Thought 
