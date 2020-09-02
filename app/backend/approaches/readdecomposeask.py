@@ -156,4 +156,5 @@ politician, not Finnish rock groups. So the documentary about Finnish rock
 groups must instead be The Saimaa Gesture.
 Action 3: Finish[The Saimaa Gesture (data123.txt) ]""",
     """Question: What profession does Nicholas Ray and Elia Kazan have in common?
-Thought 
+Thought 1: I need to search Nicholas Ray and Elia Kazan, find their professions, then
+find the profession they have in c
