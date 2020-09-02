@@ -157,4 +157,6 @@ groups must instead be The Saimaa Gesture.
 Action 3: Finish[The Saimaa Gesture (data123.txt) ]""",
     """Question: What profession does Nicholas Ray and Elia Kazan have in common?
 Thought 1: I need to search Nicholas Ray and Elia Kazan, find their professions, then
-find the profession they have in c
+find the profession they have in common.
+Action 1: Search[Nicholas Ray]
+Observation 1: [files-987.png] Nicholas Ray (born Raymond 
