@@ -162,4 +162,5 @@ Action 1: Search[Nicholas Ray]
 Observation 1: [files-987.png] Nicholas Ray (born Raymond Nicholas Kienzle Jr., August 7, 1911 - June 16,
 1979) was an American film director, screenwriter, and actor best known for
 the 1955 film Rebel Without a Cause.
-Thought 2: Professions of
+Thought 2: Professions of Nicholas Ray are director, screenwriter, and actor. I need
+to search Elia Kazan next and find his pr
