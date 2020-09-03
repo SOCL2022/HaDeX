@@ -159,4 +159,5 @@ Action 3: Finish[The Saimaa Gesture (data123.txt) ]""",
 Thought 1: I need to search Nicholas Ray and Elia Kazan, find their professions, then
 find the profession they have in common.
 Action 1: Search[Nicholas Ray]
-Observation 1: [files-987.png] Nicholas Ray (born Raymond 
+Observation 1: [files-987.png] Nicholas Ray (born Raymond Nicholas Kienzle Jr., August 7, 1911 - June 16,
+1979) was an American film director, screenwriter, 
