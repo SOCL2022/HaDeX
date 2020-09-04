@@ -167,4 +167,6 @@ to search Elia Kazan next and find his professions.
 Action 2: Search[Elia Kazan]
 Observation 2: [files-654.txt] Elia Kazan was an American film and theatre director, producer, screenwriter
 and actor.
-Thought 3: Professions of Elia Kazan are director, produ
+Thought 3: Professions of Elia Kazan are director, producer, screenwriter, and actor.
+So profession Nicholas Ray and Elia Kazan have in common is director,
+screenwriter, and actor.
