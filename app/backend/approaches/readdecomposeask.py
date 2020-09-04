@@ -165,4 +165,6 @@ the 1955 film Rebel Without a Cause.
 Thought 2: Professions of Nicholas Ray are director, screenwriter, and actor. I need
 to search Elia Kazan next and find his professions.
 Action 2: Search[Elia Kazan]
-Observation 2: [files-654.txt] Elia Kazan was an American film and theatre
+Observation 2: [files-654.txt] Elia Kazan was an American film and theatre director, producer, screenwriter
+and actor.
+Thought 3: Professions of Elia Kazan are director, produ
