@@ -170,3 +170,5 @@ and actor.
 Thought 3: Professions of Elia Kazan are director, producer, screenwriter, and actor.
 So profession Nicholas Ray and Elia Kazan have in common is director,
 screenwriter, and actor.
+Action 3: Finish[director, screenwriter, actor (files-987.png)(files-654.txt) ]""",
+    """
