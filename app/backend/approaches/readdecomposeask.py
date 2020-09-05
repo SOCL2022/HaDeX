@@ -172,4 +172,6 @@ So profession Nicholas Ray and Elia Kazan have in common is director,
 screenwriter, and actor.
 Action 3: Finish[director, screenwriter, actor (files-987.png)(files-654.txt) ]""",
     """Question: Which magazine was started first Arthur's Magazine or First for Women?
-Thought 1: I need to
+Thought 1: I need to search Arthur's Magazine and First for Women, and find which was
+started first.
+Action 1: Searc
