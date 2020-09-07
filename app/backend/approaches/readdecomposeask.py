@@ -177,4 +177,7 @@ started first.
 Action 1: Search[Arthur's Magazine]
 Observation 1: [magazines-1850.pdf] Arthur's Magazine (1844-1846) was an American literary periodical published
 in Philadelphia in the 19th century.
-Thought 2: Arthur's Magazine was 
+Thought 2: Arthur's Magazine was started in 1844. I need to search First for Women
+next.
+Action 2: Search[First for Women]
+Observ
