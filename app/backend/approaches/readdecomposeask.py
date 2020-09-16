@@ -180,4 +180,6 @@ in Philadelphia in the 19th century.
 Thought 2: Arthur's Magazine was started in 1844. I need to search First for Women
 next.
 Action 2: Search[First for Women]
-Observation 2: [magazines-1900.pdf] First for Women is a woman's magazine published by Bauer Media Group in 
+Observation 2: [magazines-1900.pdf] First for Women is a woman's magazine published by Bauer Media Group in the
+USA.[1] The magazine was started in 1989.
+Thought 3: First for Women was started in 1
