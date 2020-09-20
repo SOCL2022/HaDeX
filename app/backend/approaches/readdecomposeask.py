@@ -185,4 +185,5 @@ USA.[1] The magazine was started in 1989.
 Thought 3: First for Women was started in 1989. 1844 (Arthur's Magazine) < 1989 (First
 for Women), so Arthur's Magazine was started first.
 Action 3: Finish[Arthur's Magazine (magazines-1850.pdf)(magazines-1900.pdf) ]""",
-   
+    """Question: Were Pavel Urysohn and Leonid Levin known for the same type of work?
+Thought 1: I n
