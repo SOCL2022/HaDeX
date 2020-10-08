@@ -194,4 +194,6 @@ mathematician who is best known for his contributions in dimension theory.
 Thought 2: Pavel Urysohn is a mathematician. I need to search Leonid Levin next and
 find its type of work.
 Action 2: Search[Leonid Levin]
-Observation 2: [datapoints_aaa.txt] Leonid An
+Observation 2: [datapoints_aaa.txt] Leonid Anatolievich Levin is a Soviet-American mathematician and computer
+scientist.
+Thought 3: Leonid L
