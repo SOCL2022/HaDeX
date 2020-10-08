@@ -192,4 +192,6 @@ Action 1: Search[Pavel Urysohn]
 Observation 1: [info4444.pdf] Pavel Samuilovich Urysohn (February 3, 1898 - August 17, 1924) was a Soviet
 mathematician who is best known for his contributions in dimension theory.
 Thought 2: Pavel Urysohn is a mathematician. I need to search Leonid Levin next and
-f
+find its type of work.
+Action 2: Search[Leonid Levin]
+Observation 2: [datapoints_aaa.txt] Leonid An
