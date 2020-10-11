@@ -197,4 +197,7 @@ Action 2: Search[Leonid Levin]
 Observation 2: [datapoints_aaa.txt] Leonid Anatolievich Levin is a Soviet-American mathematician and computer
 scientist.
 Thought 3: Leonid Levin is a mathematician and computer scientist. So Pavel Urysohn
-and Leonid Levin have the same
+and Leonid Levin have the same type of work.
+Action 3: Finish[yes (info4444.pdf)(datapoints_aaa.txt) ]""",
+]
+SUFFIX = """
