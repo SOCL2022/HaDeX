@@ -200,4 +200,6 @@ Thought 3: Leonid Levin is a mathematician and computer scientist. So Pavel Urys
 and Leonid Levin have the same type of work.
 Action 3: Finish[yes (info4444.pdf)(datapoints_aaa.txt) ]""",
 ]
-SUFFIX = """
+SUFFIX = """\nQuestion: {input}
+{agent_scratchpad}"""
+PREFIX = "Answer questions as shown in the following ex
