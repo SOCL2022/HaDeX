@@ -202,4 +202,5 @@ Action 3: Finish[yes (info4444.pdf)(datapoints_aaa.txt) ]""",
 ]
 SUFFIX = """\nQuestion: {input}
 {agent_scratchpad}"""
-PREFIX = "Answer questions as shown in the following examples, by splitting the question into individual search or lookup actions to find facts until
+PREFIX = "Answer questions as shown in the following examples, by splitting the question into individual search or lookup actions to find facts until you can answer the question. " \
+"Observations are prefixed by their source name in square brackets, s
