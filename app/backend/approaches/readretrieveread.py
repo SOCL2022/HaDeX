@@ -6,4 +6,5 @@ from langchain.llms.openai import AzureOpenAI
 from langchain.callbacks.base import CallbackManager
 from langchain.chains import LLMChain
 from langchain.agents import Tool, ZeroShotAgent, AgentExecutor
-from langchai
+from langchain.llms.openai import AzureOpenAI
+from langchainadapters import HtmlCallbackHandler
