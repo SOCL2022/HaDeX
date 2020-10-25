@@ -11,4 +11,5 @@ from langchainadapters import HtmlCallbackHandler
 from text import nonewlines
 from lookuptool import CsvLookupTool
 
-# Attempt to answer questions by iteratively evaluating the question to see what information is missing, and once all
+# Attempt to answer questions by iteratively evaluating the question to see what information is missing, and once all information
+# is present then formulate an answer. Each iteration consists of two parts
