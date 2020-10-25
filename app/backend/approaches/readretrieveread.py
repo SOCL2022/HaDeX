@@ -12,4 +12,5 @@ from text import nonewlines
 from lookuptool import CsvLookupTool
 
 # Attempt to answer questions by iteratively evaluating the question to see what information is missing, and once all information
-# is present then formulate an answer. Each iteration consists of two parts
+# is present then formulate an answer. Each iteration consists of two parts: first use GPT to see if we need more information, 
+# second if more data is needed use the requested "tool" to 
