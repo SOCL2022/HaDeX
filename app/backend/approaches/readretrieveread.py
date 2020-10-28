@@ -14,4 +14,6 @@ from lookuptool import CsvLookupTool
 # Attempt to answer questions by iteratively evaluating the question to see what information is missing, and once all information
 # is present then formulate an answer. Each iteration consists of two parts: first use GPT to see if we need more information, 
 # second if more data is needed use the requested "tool" to retrieve it. The last call to GPT answers the actual question.
-# This is inspired by the MKRL paper[1] 
+# This is inspired by the MKRL paper[1] and applied here using the implementation in Langchain.
+# [1] E. Karpas, et al. arXiv:2205.00445
+cla
