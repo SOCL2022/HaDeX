@@ -16,4 +16,7 @@ from lookuptool import CsvLookupTool
 # second if more data is needed use the requested "tool" to retrieve it. The last call to GPT answers the actual question.
 # This is inspired by the MKRL paper[1] and applied here using the implementation in Langchain.
 # [1] E. Karpas, et al. arXiv:2205.00445
-cla
+class ReadRetrieveReadApproach(Approach):
+
+    template_prefix = \
+"You are an intelligent assistant help
