@@ -19,4 +19,4 @@ from lookuptool import CsvLookupTool
 class ReadRetrieveReadApproach(Approach):
 
     template_prefix = \
-"You are an intelligent assistant help
+"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook ques
