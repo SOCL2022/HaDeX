@@ -19,4 +19,6 @@ from lookuptool import CsvLookupTool
 class ReadRetrieveReadApproach(Approach):
 
     template_prefix = \
-"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook ques
+"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. " \
+"Answer the question using only the data provided in the information sources below. " \
+"Each s
