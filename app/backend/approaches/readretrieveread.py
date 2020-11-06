@@ -26,4 +26,8 @@ class ReadRetrieveReadApproach(Approach):
 "It's important to strictly follow the format where the name of the source is in square brackets at the end of the sentence, and only up to the prefix before the colon (\":\"). " \
 "If there are multiple sources, cite each one in their own square brackets. For example, use \"[info343][ref-76]\" and not \"[info343,ref-76]\". " \
 "Never quote tool names as sources." \
-"If you cannot answer using the sources below, say tha
+"If you cannot answer using the sources below, say that you don't know. " \
+"\n\nYou can access to the following tools:"
+    
+    template_suffix = """
+Be
