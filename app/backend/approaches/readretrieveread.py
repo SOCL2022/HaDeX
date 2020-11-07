@@ -30,4 +30,10 @@ class ReadRetrieveReadApproach(Approach):
 "\n\nYou can access to the following tools:"
     
     template_suffix = """
-Be
+Begin!
+
+Question: {input}
+
+Thought: {agent_scratchpad}"""    
+
+    CognitiveSearchToolDescription = "useful for s
