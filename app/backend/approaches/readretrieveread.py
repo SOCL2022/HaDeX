@@ -45,4 +45,6 @@ Thought: {agent_scratchpad}"""
         self.content_field = content_field
 
     def retrieve(self, q: str, overrides: dict) -> any:
-        use_semantic_captions = True i
+        use_semantic_captions = True if overrides.get("semantic_captions") else False
+        top = overrides.get("top") or 3
+        e
