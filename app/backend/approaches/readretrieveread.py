@@ -47,4 +47,5 @@ Thought: {agent_scratchpad}"""
     def retrieve(self, q: str, overrides: dict) -> any:
         use_semantic_captions = True if overrides.get("semantic_captions") else False
         top = overrides.get("top") or 3
-        e
+        exclude_category = overrides.get("exclude_category") or None
+        filter = "category ne '{}'".format(exclud
