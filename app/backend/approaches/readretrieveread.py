@@ -44,4 +44,5 @@ Thought: {agent_scratchpad}"""
         self.sourcepage_field = sourcepage_field
         self.content_field = content_field
 
-    
+    def retrieve(self, q: str, overrides: dict) -> any:
+        use_semantic_captions = True i
