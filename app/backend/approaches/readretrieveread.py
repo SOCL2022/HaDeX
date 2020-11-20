@@ -48,4 +48,7 @@ Thought: {agent_scratchpad}"""
         use_semantic_captions = True if overrides.get("semantic_captions") else False
         top = overrides.get("top") or 3
         exclude_category = overrides.get("exclude_category") or None
-        filter = "category ne '{}'".format(exclud
+        filter = "category ne '{}'".format(exclude_category.replace("'", "''")) if exclude_category else None
+
+        if overrides.get("semantic_ranker"):
+  
