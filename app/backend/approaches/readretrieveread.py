@@ -51,4 +51,5 @@ Thought: {agent_scratchpad}"""
         filter = "category ne '{}'".format(exclude_category.replace("'", "''")) if exclude_category else None
 
         if overrides.get("semantic_ranker"):
-  
+            r = self.search_client.search(q,
+                                          filt
