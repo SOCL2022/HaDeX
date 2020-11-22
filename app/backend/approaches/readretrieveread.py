@@ -55,4 +55,5 @@ Thought: {agent_scratchpad}"""
                                           filter=filter, 
                                           query_type=QueryType.SEMANTIC, 
                                           query_language="en-us", 
-                   
+                                          query_speller="lexicon", 
+                                          semantic_configura
