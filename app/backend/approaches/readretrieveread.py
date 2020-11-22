@@ -56,4 +56,6 @@ Thought: {agent_scratchpad}"""
                                           query_type=QueryType.SEMANTIC, 
                                           query_language="en-us", 
                                           query_speller="lexicon", 
-                                          semantic_configura
+                                          semantic_configuration_name="default", 
+                                          top = top,
+                  
