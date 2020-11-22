@@ -53,4 +53,6 @@ Thought: {agent_scratchpad}"""
         if overrides.get("semantic_ranker"):
             r = self.search_client.search(q,
                                           filter=filter, 
-                                          query_type=QueryType.SEMANTIC
+                                          query_type=QueryType.SEMANTIC, 
+                                          query_language="en-us", 
+                   
