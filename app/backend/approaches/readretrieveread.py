@@ -65,4 +65,7 @@ Thought: {agent_scratchpad}"""
             self.results = [doc[self.sourcepage_field] + ":" + nonewlines(" -.- ".join([c.text for c in doc['@search.captions']])) for doc in r]
         else:
             self.results = [doc[self.sourcepage_field] + ":" + nonewlines(doc[self.content_field][:250]) for doc in r]
- 
+        content = "\n".join(self.results)
+        return content
+        
+    def r
