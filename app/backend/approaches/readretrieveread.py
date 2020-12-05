@@ -69,4 +69,5 @@ Thought: {agent_scratchpad}"""
         return content
         
     def run(self, q: str, overrides: dict) -> any:
-        # Not great to keep this as instance state, 
+        # Not great to keep this as instance state, won't work with interleaving (e.g. if using async), but keeps the example simple
+        self.resul
