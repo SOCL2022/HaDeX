@@ -68,4 +68,5 @@ Thought: {agent_scratchpad}"""
         content = "\n".join(self.results)
         return content
         
-    def r
+    def run(self, q: str, overrides: dict) -> any:
+        # Not great to keep this as instance state, 
