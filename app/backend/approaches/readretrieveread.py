@@ -74,4 +74,6 @@ Thought: {agent_scratchpad}"""
 
         # Use to capture thought process during iterations
         cb_handler = HtmlCallbackHandler()
-        cb_manager = CallbackManager(handlers=[cb_handler]
+        cb_manager = CallbackManager(handlers=[cb_handler])
+        
+        acs_tool = Tool(name = "CognitiveSearch", func = lambda q: self.retrieve(q, overrides
