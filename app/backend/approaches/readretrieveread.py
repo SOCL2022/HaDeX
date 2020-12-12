@@ -73,4 +73,5 @@ Thought: {agent_scratchpad}"""
         self.results = None
 
         # Use to capture thought process during iterations
-        cb_handler = HtmlCa
+        cb_handler = HtmlCallbackHandler()
+        cb_manager = CallbackManager(handlers=[cb_handler]
