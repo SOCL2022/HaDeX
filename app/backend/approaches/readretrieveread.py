@@ -77,4 +77,7 @@ Thought: {agent_scratchpad}"""
         cb_manager = CallbackManager(handlers=[cb_handler])
         
         acs_tool = Tool(name = "CognitiveSearch", func = lambda q: self.retrieve(q, overrides), description = self.CognitiveSearchToolDescription)
-        employee_tool = EmployeeInfoToo
+        employee_tool = EmployeeInfoTool("Employee1")
+        tools = [acs_tool, employee_tool]
+
+        prompt = ZeroShotAgent.create
