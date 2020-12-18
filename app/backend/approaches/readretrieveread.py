@@ -84,4 +84,5 @@ Thought: {agent_scratchpad}"""
             tools=tools,
             prefix=overrides.get("prompt_template_prefix") or self.template_prefix,
             suffix=overrides.get("prompt_template_suffix") or self.template_suffix,
-    
+            input_variables = ["input", "agent_scratchpad"])
+        llm = AzureOpenAI(deployment_name=self.openai_d
