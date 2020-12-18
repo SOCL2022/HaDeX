@@ -80,4 +80,6 @@ Thought: {agent_scratchpad}"""
         employee_tool = EmployeeInfoTool("Employee1")
         tools = [acs_tool, employee_tool]
 
-        prompt = ZeroShotAgent.create
+        prompt = ZeroShotAgent.create_prompt(
+            tools=tools,
+            prefix=overrides.get("prompt_template_prefix") or self.templ
