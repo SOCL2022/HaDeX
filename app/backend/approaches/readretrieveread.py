@@ -82,4 +82,6 @@ Thought: {agent_scratchpad}"""
 
         prompt = ZeroShotAgent.create_prompt(
             tools=tools,
-            prefix=overrides.get("prompt_template_prefix") or self.templ
+            prefix=overrides.get("prompt_template_prefix") or self.template_prefix,
+            suffix=overrides.get("prompt_template_suffix") or self.template_suffix,
+    
