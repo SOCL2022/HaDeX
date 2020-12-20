@@ -86,4 +86,6 @@ Thought: {agent_scratchpad}"""
             suffix=overrides.get("prompt_template_suffix") or self.template_suffix,
             input_variables = ["input", "agent_scratchpad"])
         llm = AzureOpenAI(deployment_name=self.openai_deployment, temperature=overrides.get("temperature") or 0.3, openai_api_key=openai.api_key)
-        chai
+        chain = LLMChain(llm = llm, prompt = prompt)
+        agent_exec = AgentExecutor.from_agent_and_tools(
+    
