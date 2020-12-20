@@ -90,4 +90,6 @@ Thought: {agent_scratchpad}"""
         agent_exec = AgentExecutor.from_agent_and_tools(
             agent = ZeroShotAgent(llm_chain = chain, tools = tools),
             tools = tools, 
-            v
+            verbose = True, 
+            callback_manager = cb_manager)
+        result = agent_ex
