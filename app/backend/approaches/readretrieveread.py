@@ -92,4 +92,6 @@ Thought: {agent_scratchpad}"""
             tools = tools, 
             verbose = True, 
             callback_manager = cb_manager)
-        result = agent_ex
+        result = agent_exec.run(q)
+                
+        # Remove references to tool names that might be confused with a cita
