@@ -94,4 +94,7 @@ Thought: {agent_scratchpad}"""
             callback_manager = cb_manager)
         result = agent_exec.run(q)
                 
-        # Remove references to tool names that might be confused with a cita
+        # Remove references to tool names that might be confused with a citation
+        result = result.replace("[CognitiveSearch]", "").replace("[Employee]", "")
+
+        return {"data_points":
