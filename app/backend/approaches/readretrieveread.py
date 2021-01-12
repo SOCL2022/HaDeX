@@ -99,4 +99,8 @@ Thought: {agent_scratchpad}"""
 
         return {"data_points": self.results or [], "answer": result, "thoughts": cb_handler.get_and_reset_log()}
 
-class EmployeeInfoTool(CsvLook
+class EmployeeInfoTool(CsvLookupTool):
+    employee_name: str = ""
+
+    def __init__(self, employee_name: str):
+        super()._
