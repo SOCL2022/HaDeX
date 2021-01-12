@@ -97,4 +97,6 @@ Thought: {agent_scratchpad}"""
         # Remove references to tool names that might be confused with a citation
         result = result.replace("[CognitiveSearch]", "").replace("[Employee]", "")
 
-        return {"data_points":
+        return {"data_points": self.results or [], "answer": result, "thoughts": cb_handler.get_and_reset_log()}
+
+class EmployeeInfoTool(CsvLook
