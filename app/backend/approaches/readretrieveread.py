@@ -103,4 +103,4 @@ class EmployeeInfoTool(CsvLookupTool):
     employee_name: str = ""
 
     def __init__(self, employee_name: str):
-        super().__init__(filename = "data/employeeinfo.csv", key_field = "name", name = "Employee", descrip
+        super().__init__(filename = "data/employeeinfo.csv", key_field = "name", name = "Employee", description = "useful for answering questions about the employee, their benefits and other personal information
