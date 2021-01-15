@@ -107,4 +107,5 @@ class EmployeeInfoTool(CsvLookupTool):
         self.func = self.employee_info
         self.employee_name = employee_name
 
-    def employe
+    def employee_info(self, unused: str) -> str:
+        return self.lookup(self.employee_name)
