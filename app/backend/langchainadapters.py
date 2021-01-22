@@ -3,4 +3,5 @@ from langchain.callbacks.base import BaseCallbackHandler
 from langchain.schema import AgentAction, AgentFinish, LLMResult
 
 def ch(text: str) -> str:
-  
+    s = text if isinstance(text, str) else str(text)
+    return s.replace("<", "&lt;").
