@@ -6,4 +6,8 @@ def ch(text: str) -> str:
     s = text if isinstance(text, str) else str(text)
     return s.replace("<", "&lt;").replace(">", "&gt;").replace("\r", "").replace("\n", "<br>")
 
-class HtmlCallbackHandler (B
+class HtmlCallbackHandler (BaseCallbackHandler):
+    html: str = ""
+
+    def get_and_reset_log(self) -> str:
+        r
