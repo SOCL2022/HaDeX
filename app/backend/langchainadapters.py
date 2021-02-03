@@ -17,4 +17,5 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     def on_llm_start(
         self, serialized: Dict[str, Any], prompts: List[str], **kwargs: Any
     ) -> None:
-        """Print
+        """Print out the prompts."""
+        self.html += f"LLM prompts:<br>" + "<br>".join(ch(pr
