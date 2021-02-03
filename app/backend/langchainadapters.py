@@ -15,4 +15,6 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         return result
     
     def on_llm_start(
-        self, seriali
+        self, serialized: Dict[str, Any], prompts: List[str], **kwargs: Any
+    ) -> None:
+        """Print
