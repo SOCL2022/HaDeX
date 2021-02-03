@@ -10,4 +10,9 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     html: str = ""
 
     def get_and_reset_log(self) -> str:
-        r
+        result = self.html
+        self.html = ""
+        return result
+    
+    def on_llm_start(
+        self, seriali
