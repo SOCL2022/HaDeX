@@ -18,4 +18,7 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         self, serialized: Dict[str, Any], prompts: List[str], **kwargs: Any
     ) -> None:
         """Print out the prompts."""
-        self.html += f"LLM prompts:<br>" + "<br>".join(ch(pr
+        self.html += f"LLM prompts:<br>" + "<br>".join(ch(prompts)) + "<br>";
+
+    def on_llm_end(self, response: LLMResult, **kwargs: Any) -> None:
+ 
