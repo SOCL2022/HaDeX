@@ -21,4 +21,7 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         self.html += f"LLM prompts:<br>" + "<br>".join(ch(prompts)) + "<br>";
 
     def on_llm_end(self, response: LLMResult, **kwargs: Any) -> None:
- 
+        """Do nothing."""
+        pass
+
+    def on_llm_error(self, error: Exception, **kwargs: Any) -> Non
