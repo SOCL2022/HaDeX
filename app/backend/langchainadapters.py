@@ -24,4 +24,7 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         """Do nothing."""
         pass
 
-    def on_llm_error(self, error: Exception, **kwargs: Any) -> Non
+    def on_llm_error(self, error: Exception, **kwargs: Any) -> None:
+        self.html += f"<span style='color:red'>LLM error: {ch(error)}</span><br>"
+
+    def o
