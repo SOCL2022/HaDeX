@@ -27,4 +27,6 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     def on_llm_error(self, error: Exception, **kwargs: Any) -> None:
         self.html += f"<span style='color:red'>LLM error: {ch(error)}</span><br>"
 
-    def o
+    def on_chain_start(
+        self, serialized: Dict[str, Any], inputs: Dict[str, Any], **kwargs: Any
+    ) -> Non
