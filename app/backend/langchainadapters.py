@@ -29,4 +29,7 @@ class HtmlCallbackHandler (BaseCallbackHandler):
 
     def on_chain_start(
         self, serialized: Dict[str, Any], inputs: Dict[str, Any], **kwargs: Any
-    ) -> Non
+    ) -> None:
+        """Print out that we are entering a chain."""
+        class_name = serialized["name"]
+     
