@@ -32,4 +32,6 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     ) -> None:
         """Print out that we are entering a chain."""
         class_name = serialized["name"]
-     
+        self.html += f"Entering chain: {ch(class_name)}<br>"
+
+    def on_chain_end(self, output
