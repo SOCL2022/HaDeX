@@ -36,4 +36,6 @@ class HtmlCallbackHandler (BaseCallbackHandler):
 
     def on_chain_end(self, outputs: Dict[str, Any], **kwargs: Any) -> None:
         """Print out that we finished a chain."""
-        self.htm
+        self.html += f"Finished chain<br>"
+
+    def on_chain_error(self, error: Exception, **kwargs: Any)
