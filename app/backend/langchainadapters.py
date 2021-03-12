@@ -38,4 +38,5 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         """Print out that we finished a chain."""
         self.html += f"Finished chain<br>"
 
-    def on_chain_error(self, error: Exception, **kwargs: Any)
+    def on_chain_error(self, error: Exception, **kwargs: Any) -> None:
+        self.html += f"<span style='color:red'>Chain error: {ch(error)}</span><br>"
