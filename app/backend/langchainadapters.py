@@ -40,3 +40,8 @@ class HtmlCallbackHandler (BaseCallbackHandler):
 
     def on_chain_error(self, error: Exception, **kwargs: Any) -> None:
         self.html += f"<span style='color:red'>Chain error: {ch(error)}</span><br>"
+
+    def on_tool_start(
+        self,
+        serialized: Dict[str, Any],
+        action: AgentActi
