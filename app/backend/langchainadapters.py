@@ -44,4 +44,8 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     def on_tool_start(
         self,
         serialized: Dict[str, Any],
-        action: AgentActi
+        action: AgentAction,
+        color: Optional[str] = None,
+        **kwargs: Any,
+    ) -> None:
+        """Print out the log in
