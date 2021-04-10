@@ -54,4 +54,6 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     def on_tool_end(
         self,
         output: str,
-        color: Optional
+        color: Optional[str] = None,
+        observation_prefix: Optional[str] = None,
+        llm_prefix: Optional[
