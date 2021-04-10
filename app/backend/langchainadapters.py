@@ -62,4 +62,5 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         """If not the final action, print out observation."""
         self.html += f"{ch(observation_prefix)}<br><span style='color:{color}'>{ch(output)}</span><br>{ch(llm_prefix)}<br>"
 
-    def on_tool_error(self, error: Exception, **kwargs: Any) -> No
+    def on_tool_error(self, error: Exception, **kwargs: Any) -> None:
+        self.html += f"<span style='color:red'>Tool error: {ch(error)}</span><br>"
