@@ -59,4 +59,5 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         llm_prefix: Optional[str] = None,
         **kwargs: Any,
     ) -> None:
-        """If not the final action, print out
+        """If not the final action, print out observation."""
+        self.html += f"{ch(observation_prefix)}<br><span style='color:{color}'>{ch(ou
