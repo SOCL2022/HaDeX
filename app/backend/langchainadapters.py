@@ -48,4 +48,5 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         color: Optional[str] = None,
         **kwargs: Any,
     ) -> None:
-        """Print out the log in
+        """Print out the log in specified color."""
+        self.html += f"<span style='color:{color}'>{ch(action.lo
