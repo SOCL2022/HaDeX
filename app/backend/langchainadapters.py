@@ -60,4 +60,6 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         **kwargs: Any,
     ) -> None:
         """If not the final action, print out observation."""
-        self.html += f"{ch(observation_prefix)}<br><span style='color:{color}'>{ch(ou
+        self.html += f"{ch(observation_prefix)}<br><span style='color:{color}'>{ch(output)}</span><br>{ch(llm_prefix)}<br>"
+
+    def on_tool_error(self, error: Exception, **kwargs: Any) -> No
