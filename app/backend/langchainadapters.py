@@ -69,4 +69,8 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         self,
         text: str,
         color: Optional[str] = None,
-    
+        end: str = "",
+        **kwargs: Optional[str],
+    ) -> None:
+        """Run when agent ends."""
+        sel
