@@ -56,4 +56,7 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         output: str,
         color: Optional[str] = None,
         observation_prefix: Optional[str] = None,
-        llm_prefix: Optional[
+        llm_prefix: Optional[str] = None,
+        **kwargs: Any,
+    ) -> None:
+        """If not the final action, print out
