@@ -64,3 +64,9 @@ class HtmlCallbackHandler (BaseCallbackHandler):
 
     def on_tool_error(self, error: Exception, **kwargs: Any) -> None:
         self.html += f"<span style='color:red'>Tool error: {ch(error)}</span><br>"
+
+    def on_text(
+        self,
+        text: str,
+        color: Optional[str] = None,
+    
