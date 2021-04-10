@@ -49,4 +49,9 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         **kwargs: Any,
     ) -> None:
         """Print out the log in specified color."""
-        self.html += f"<span style='color:{color}'>{ch(action.lo
+        self.html += f"<span style='color:{color}'>{ch(action.log)}</span><br>"
+
+    def on_tool_end(
+        self,
+        output: str,
+        color: Optional
