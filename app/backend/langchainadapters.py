@@ -73,4 +73,7 @@ class HtmlCallbackHandler (BaseCallbackHandler):
         **kwargs: Optional[str],
     ) -> None:
         """Run when agent ends."""
-        sel
+        self.html += f"<span style='color:{color}'>{ch(text)}</span><br>"
+
+    def on_agent_finish(
+        self,
