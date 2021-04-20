@@ -78,4 +78,5 @@ class HtmlCallbackHandler (BaseCallbackHandler):
     def on_agent_finish(
         self, finish: AgentFinish, color: Optional[str] = None, **kwargs: Any
     ) -> None:
-        """Run on agent e
+        """Run on agent end."""
+        self.html += f"<span style='color:{color}'>{ch(finish.log)}</span><br>"
