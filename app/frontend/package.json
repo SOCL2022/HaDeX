@@ -6,4 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "watch
+    "watch": "tsc && vite build --watch"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.105.
