@@ -9,4 +9,7 @@
     "watch": "tsc && vite build --watch"
   },
   "dependencies": {
-    "@fluentui/react": "^8.105.
+    "@fluentui/react": "^8.105.3",
+    "@fluentui/react-icons": "^2.0.195",
+    "@react-spring/web": "^9.7.1",
+    "dompurify": "^3.0.
