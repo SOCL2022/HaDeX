@@ -4,4 +4,8 @@ export async function askApi(options: AskRequest): Promise<AskResponse> {
     const response = await fetch("/ask", {
         method: "POST",
         headers: {
-            "Content-Type": "
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            question: options.question,
+        
