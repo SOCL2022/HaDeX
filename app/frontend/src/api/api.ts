@@ -11,4 +11,6 @@ export async function askApi(options: AskRequest): Promise<AskResponse> {
             approach: options.approach,
             overrides: {
                 semantic_ranker: options.overrides?.semanticRanker,
-                semantic_captions: options.overrides?.semanticC
+                semantic_captions: options.overrides?.semanticCaptions,
+                top: options.overrides?.top,
+                temperature: options.overrides?.te
