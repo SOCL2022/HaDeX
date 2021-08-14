@@ -16,4 +16,5 @@ export async function askApi(options: AskRequest): Promise<AskResponse> {
                 temperature: options.overrides?.temperature,
                 prompt_template: options.overrides?.promptTemplate,
                 prompt_template_prefix: options.overrides?.promptTemplatePrefix,
-         
+                prompt_template_suffix: options.overrides?.promptTemplateSuffix,
+                excl
