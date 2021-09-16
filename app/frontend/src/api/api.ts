@@ -17,4 +17,9 @@ export async function askApi(options: AskRequest): Promise<AskResponse> {
                 prompt_template: options.overrides?.promptTemplate,
                 prompt_template_prefix: options.overrides?.promptTemplatePrefix,
                 prompt_template_suffix: options.overrides?.promptTemplateSuffix,
-                excl
+                exclude_category: options.overrides?.excludeCategory
+            }
+        })
+    });
+
+    const parsedResponse:
