@@ -24,4 +24,10 @@ export async function askApi(options: AskRequest): Promise<AskResponse> {
 
     const parsedResponse: AskResponse = await response.json();
     if (response.status > 299 || !response.ok) {
-        th
+        throw Error(parsedResponse.error || "Unknown error");
+    }
+
+    return parsedResponse;
+}
+
+expor
