@@ -30,4 +30,5 @@ export async function askApi(options: AskRequest): Promise<AskResponse> {
     return parsedResponse;
 }
 
-expor
+export async function chatApi(options: ChatRequest): Promise<AskResponse> {
+    const response = awai
