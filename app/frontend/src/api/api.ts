@@ -34,4 +34,8 @@ export async function chatApi(options: ChatRequest): Promise<AskResponse> {
     const response = await fetch("/chat", {
         method: "POST",
         headers: {
-            "Content-Type": "appli
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            history: options.history,
+     
