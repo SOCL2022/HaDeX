@@ -42,4 +42,5 @@ export async function chatApi(options: ChatRequest): Promise<AskResponse> {
             overrides: {
                 semantic_ranker: options.overrides?.semanticRanker,
                 semantic_captions: options.overrides?.semanticCaptions,
-        
+                top: options.overrides?.top,
+                temperature: options.overrides?.temperature
