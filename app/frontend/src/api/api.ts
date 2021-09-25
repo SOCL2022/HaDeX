@@ -38,4 +38,6 @@ export async function chatApi(options: ChatRequest): Promise<AskResponse> {
         },
         body: JSON.stringify({
             history: options.history,
-     
+            approach: options.approach,
+            overrides: {
+                semantic_ranker: options.ove
