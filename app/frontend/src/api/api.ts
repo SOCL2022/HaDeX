@@ -54,4 +54,5 @@ export async function chatApi(options: ChatRequest): Promise<AskResponse> {
     });
 
     const parsedResponse: AskResponse = await response.json();
-    if (
+    if (response.status > 299 || !response.ok) {
+        throw Error(parsedResponse.error || "Unkn
