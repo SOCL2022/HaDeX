@@ -62,4 +62,5 @@ export async function chatApi(options: ChatRequest): Promise<AskResponse> {
 }
 
 export function getCitationFilePath(citation: string): string {
-    retu
+    return `/content/${citation}`;
+}
