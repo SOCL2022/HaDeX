@@ -55,4 +55,11 @@ export async function chatApi(options: ChatRequest): Promise<AskResponse> {
 
     const parsedResponse: AskResponse = await response.json();
     if (response.status > 299 || !response.ok) {
-        throw Error(parsedResponse.error || "Unkn
+        throw Error(parsedResponse.error || "Unknown error");
+    }
+
+    return parsedResponse;
+}
+
+export function getCitationFilePath(citation: string): string {
+    retu
