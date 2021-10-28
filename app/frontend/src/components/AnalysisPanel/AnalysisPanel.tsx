@@ -5,4 +5,8 @@ import styles from "./AnalysisPanel.module.css";
 
 import { SupportingContent } from "../SupportingContent";
 import { AskResponse } from "../../api";
-import
+import { AnalysisPanelTabs } from "./AnalysisPanelTabs";
+
+interface Props {
+    className: string;
+    act
