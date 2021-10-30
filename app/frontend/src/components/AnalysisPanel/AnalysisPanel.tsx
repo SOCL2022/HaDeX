@@ -11,4 +11,9 @@ interface Props {
     className: string;
     activeTab: AnalysisPanelTabs;
     onActiveTabChanged: (tab: AnalysisPanelTabs) => void;
-    activeCitation: s
+    activeCitation: string | undefined;
+    citationHeight: string;
+    answer: AskResponse;
+}
+
+const pivotItemDisabledS
