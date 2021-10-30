@@ -18,4 +18,5 @@ interface Props {
 
 const pivotItemDisabledStyle = { disabled: true, style: { color: "grey" } };
 
-export const AnalysisPanel = ({ answer, activeTab, a
+export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeight, className, onActiveTabChanged }: Props) => {
+    const isDi
