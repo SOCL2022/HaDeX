@@ -9,4 +9,6 @@ import { AnalysisPanelTabs } from "./AnalysisPanelTabs";
 
 interface Props {
     className: string;
-    act
+    activeTab: AnalysisPanelTabs;
+    onActiveTabChanged: (tab: AnalysisPanelTabs) => void;
+    activeCitation: s
