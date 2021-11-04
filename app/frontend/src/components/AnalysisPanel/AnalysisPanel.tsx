@@ -27,4 +27,6 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
 
     return (
         <Pivot
-           
+            className={className}
+            selectedKey={activeTab}
+            onLinkClick={pivotItem => pivo
