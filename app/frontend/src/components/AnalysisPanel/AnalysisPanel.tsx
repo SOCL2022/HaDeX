@@ -23,4 +23,8 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
     const isDisabledSupportingContentTab: boolean = !answer.data_points.length;
     const isDisabledCitationTab: boolean = !activeCitation;
 
-    const
+    const sanitizedThoughts = DOMPurify.sanitize(answer.thoughts!);
+
+    return (
+        <Pivot
+           
