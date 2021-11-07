@@ -32,4 +32,5 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             onLinkClick={pivotItem => pivotItem && onActiveTabChanged(pivotItem.props.itemKey! as AnalysisPanelTabs)}
         >
             <PivotItem
-       
+                itemKey={AnalysisPanelTabs.ThoughtProcessTab}
+                head
