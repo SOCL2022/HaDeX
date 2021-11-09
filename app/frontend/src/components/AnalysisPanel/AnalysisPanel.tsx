@@ -33,4 +33,5 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
         >
             <PivotItem
                 itemKey={AnalysisPanelTabs.ThoughtProcessTab}
-                head
+                headerText="Thought process"
+                headerButtonProps={isDisabledThoughtProcessTab ? pivotItemDisabledSt
