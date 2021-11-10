@@ -34,4 +34,6 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             <PivotItem
                 itemKey={AnalysisPanelTabs.ThoughtProcessTab}
                 headerText="Thought process"
-                headerButtonProps={isDisabledThoughtProcessTab ? pivotItemDisabledSt
+                headerButtonProps={isDisabledThoughtProcessTab ? pivotItemDisabledStyle : undefined}
+            >
+                <div className={styles.thoughtProcess} dangerousl
