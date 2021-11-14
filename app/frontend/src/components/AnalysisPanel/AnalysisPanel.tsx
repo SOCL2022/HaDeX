@@ -38,4 +38,6 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             >
                 <div className={styles.thoughtProcess} dangerouslySetInnerHTML={{ __html: sanitizedThoughts }}></div>
             </PivotItem>
-            <Piv
+            <PivotItem
+                itemKey={AnalysisPanelTabs.SupportingContentTab}
+                headerText="Supporting c
