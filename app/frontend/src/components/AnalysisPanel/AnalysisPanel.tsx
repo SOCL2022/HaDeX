@@ -40,4 +40,6 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             </PivotItem>
             <PivotItem
                 itemKey={AnalysisPanelTabs.SupportingContentTab}
-                headerText="Supporting c
+                headerText="Supporting content"
+                headerButtonProps={isDisabledSupportingContentTab ? pivotItemDisabledStyle : undefined}
+        
