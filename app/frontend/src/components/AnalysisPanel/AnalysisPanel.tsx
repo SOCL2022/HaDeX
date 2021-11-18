@@ -42,4 +42,7 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
                 itemKey={AnalysisPanelTabs.SupportingContentTab}
                 headerText="Supporting content"
                 headerButtonProps={isDisabledSupportingContentTab ? pivotItemDisabledStyle : undefined}
-        
+            >
+                <SupportingContent supportingContent={answer.data_points} />
+            </PivotItem>
+    
