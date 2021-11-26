@@ -45,4 +45,6 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             >
                 <SupportingContent supportingContent={answer.data_points} />
             </PivotItem>
-    
+            <PivotItem
+                itemKey={AnalysisPanelTabs.CitationTab}
+     
