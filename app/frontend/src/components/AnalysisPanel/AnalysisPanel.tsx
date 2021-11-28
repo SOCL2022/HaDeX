@@ -47,4 +47,5 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             </PivotItem>
             <PivotItem
                 itemKey={AnalysisPanelTabs.CitationTab}
-     
+                headerText="Citation"
+                headerButtonProps={isDisabledCitationTab ? pivotI
