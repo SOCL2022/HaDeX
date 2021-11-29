@@ -48,4 +48,6 @@ export const AnalysisPanel = ({ answer, activeTab, activeCitation, citationHeigh
             <PivotItem
                 itemKey={AnalysisPanelTabs.CitationTab}
                 headerText="Citation"
-                headerButtonProps={isDisabledCitationTab ? pivotI
+                headerButtonProps={isDisabledCitationTab ? pivotItemDisabledStyle : undefined}
+            >
+                <iframe title="Citation" src={
