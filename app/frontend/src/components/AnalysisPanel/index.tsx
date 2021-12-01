@@ -1,1 +1,2 @@
-export * from
+export * from "./AnalysisPanel";
+export * from "./AnalysisPanelTabs";
