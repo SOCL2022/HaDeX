@@ -8,4 +8,7 @@ import { AskResponse, getCitationFilePath } from "../../api";
 import { parseAnswerToHtml } from "./AnswerParser";
 import { AnswerIcon } from "./AnswerIcon";
 
-interface
+interface Props {
+    answer: AskResponse;
+    isSelected?: boolean;
+    onCitationClicked: (filePath: string) => void;
