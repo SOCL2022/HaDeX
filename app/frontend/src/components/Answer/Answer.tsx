@@ -14,4 +14,5 @@ interface Props {
     onCitationClicked: (filePath: string) => void;
     onThoughtProcessClicked: () => void;
     onSupportingContentClicked: () => void;
-  
+    onFollowupQuestionClicked?: (question: string) => void;
+    showFollowupQuestion
