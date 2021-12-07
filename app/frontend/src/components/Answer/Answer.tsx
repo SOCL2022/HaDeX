@@ -12,3 +12,6 @@ interface Props {
     answer: AskResponse;
     isSelected?: boolean;
     onCitationClicked: (filePath: string) => void;
+    onThoughtProcessClicked: () => void;
+    onSupportingContentClicked: () => void;
+  
