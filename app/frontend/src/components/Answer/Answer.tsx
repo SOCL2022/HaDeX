@@ -25,4 +25,6 @@ export const Answer = ({
     onThoughtProcessClicked,
     onSupportingContentClicked,
     onFollowupQuestionClicked,
-    s
+    showFollowupQuestions
+}: Props) => {
+    const parsedAnswer = useMemo(() => parseAnswerToHtml(a
