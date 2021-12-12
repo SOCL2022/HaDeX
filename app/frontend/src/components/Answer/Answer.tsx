@@ -15,4 +15,10 @@ interface Props {
     onThoughtProcessClicked: () => void;
     onSupportingContentClicked: () => void;
     onFollowupQuestionClicked?: (question: string) => void;
-    showFollowupQuestion
+    showFollowupQuestions?: boolean;
+}
+
+export const Answer = ({
+    answer,
+    isSelected,
+    onCitationClick
