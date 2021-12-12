@@ -21,4 +21,8 @@ interface Props {
 export const Answer = ({
     answer,
     isSelected,
-    onCitationClick
+    onCitationClicked,
+    onThoughtProcessClicked,
+    onSupportingContentClicked,
+    onFollowupQuestionClicked,
+    s
