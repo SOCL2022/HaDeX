@@ -29,4 +29,7 @@ export const Answer = ({
 }: Props) => {
     const parsedAnswer = useMemo(() => parseAnswerToHtml(answer.answer, onCitationClicked), [answer]);
 
-    const sanitizedAnswerHtml = DOMPurify.sanitize(parsedAnswer.answe
+    const sanitizedAnswerHtml = DOMPurify.sanitize(parsedAnswer.answerHtml);
+
+    return (
+        <Stack className={`${styles.answerContainer} ${isSelected && styl
