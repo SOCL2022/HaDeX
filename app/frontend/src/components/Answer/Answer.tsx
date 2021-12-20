@@ -32,4 +32,6 @@ export const Answer = ({
     const sanitizedAnswerHtml = DOMPurify.sanitize(parsedAnswer.answerHtml);
 
     return (
-        <Stack className={`${styles.answerContainer} ${isSelected && styl
+        <Stack className={`${styles.answerContainer} ${isSelected && styles.selected}`} verticalAlign="space-between">
+            <Stack.Item>
+                <Stac
