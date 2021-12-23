@@ -34,4 +34,7 @@ export const Answer = ({
     return (
         <Stack className={`${styles.answerContainer} ${isSelected && styles.selected}`} verticalAlign="space-between">
             <Stack.Item>
-                <Stac
+                <Stack horizontal horizontalAlign="space-between">
+                    <AnswerIcon />
+                    <div>
+ 
