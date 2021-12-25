@@ -37,4 +37,5 @@ export const Answer = ({
                 <Stack horizontal horizontalAlign="space-between">
                     <AnswerIcon />
                     <div>
- 
+                        <IconButton
+                            style={{ color: "black" }}
