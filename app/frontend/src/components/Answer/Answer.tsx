@@ -39,3 +39,5 @@ export const Answer = ({
                     <div>
                         <IconButton
                             style={{ color: "black" }}
+                            iconProps={{ iconName: "Lightbulb" }}
+                     
