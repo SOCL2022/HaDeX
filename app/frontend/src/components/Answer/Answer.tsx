@@ -40,4 +40,5 @@ export const Answer = ({
                         <IconButton
                             style={{ color: "black" }}
                             iconProps={{ iconName: "Lightbulb" }}
-                     
+                            title="Show thought process"
+                            ariaLabel="Show thought 
