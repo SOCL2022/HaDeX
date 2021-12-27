@@ -41,4 +41,6 @@ export const Answer = ({
                             style={{ color: "black" }}
                             iconProps={{ iconName: "Lightbulb" }}
                             title="Show thought process"
-                            ariaLabel="Show thought 
+                            ariaLabel="Show thought process"
+                            onClick={() => onThoughtProcessClicked()}
+                    
