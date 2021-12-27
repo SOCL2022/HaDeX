@@ -43,4 +43,7 @@ export const Answer = ({
                             title="Show thought process"
                             ariaLabel="Show thought process"
                             onClick={() => onThoughtProcessClicked()}
-                    
+                            disabled={!answer.thoughts}
+                        />
+                        <IconButton
+                  
