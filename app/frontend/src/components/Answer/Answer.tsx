@@ -48,4 +48,5 @@ export const Answer = ({
                         <IconButton
                             style={{ color: "black" }}
                             iconProps={{ iconName: "ClipboardList" }}
-   
+                            title="Show supporting content"
+                            ariaLabel="Show s
