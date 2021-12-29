@@ -46,4 +46,6 @@ export const Answer = ({
                             disabled={!answer.thoughts}
                         />
                         <IconButton
-                  
+                            style={{ color: "black" }}
+                            iconProps={{ iconName: "ClipboardList" }}
+   
