@@ -49,4 +49,6 @@ export const Answer = ({
                             style={{ color: "black" }}
                             iconProps={{ iconName: "ClipboardList" }}
                             title="Show supporting content"
-                            ariaLabel="Show s
+                            ariaLabel="Show supporting content"
+                            onClick={() => onSupportingContentClicked()}
+ 
