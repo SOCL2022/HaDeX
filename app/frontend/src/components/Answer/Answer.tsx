@@ -53,4 +53,8 @@ export const Answer = ({
                             onClick={() => onSupportingContentClicked()}
                             disabled={!answer.data_points.length}
                         />
-           
+                    </div>
+                </Stack>
+            </Stack.Item>
+
+            <Stack.It
