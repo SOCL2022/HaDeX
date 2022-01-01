@@ -64,4 +64,5 @@ export const Answer = ({
             {!!parsedAnswer.citations.length && (
                 <Stack.Item>
                     <Stack horizontal wrap tokens={{ childrenGap: 5 }}>
-         
+                        <span className={styles.citationLearnMore}>Citations:</span>
+                        {
