@@ -57,4 +57,5 @@ export const Answer = ({
                 </Stack>
             </Stack.Item>
 
-            <Stack.It
+            <Stack.Item grow>
+                <div className={styles.answerText} dangerouslySetInnerHTML={{ __html: saniti
