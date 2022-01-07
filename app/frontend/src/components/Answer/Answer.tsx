@@ -69,4 +69,7 @@ export const Answer = ({
                             const path = getCitationFilePath(x);
                             return (
                                 <a key={i} className={styles.citation} title={x} onClick={() => onCitationClicked(path)}>
-                                    
+                                    {`${++i}. ${x}`}
+                                </a>
+                            );
+      
