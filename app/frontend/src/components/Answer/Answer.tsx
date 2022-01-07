@@ -66,4 +66,6 @@ export const Answer = ({
                     <Stack horizontal wrap tokens={{ childrenGap: 5 }}>
                         <span className={styles.citationLearnMore}>Citations:</span>
                         {parsedAnswer.citations.map((x, i) => {
-                            const path = getCitati
+                            const path = getCitationFilePath(x);
+                            return (
+                                <a key={i} cla
