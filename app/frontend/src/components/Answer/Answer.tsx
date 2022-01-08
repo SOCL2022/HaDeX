@@ -72,4 +72,9 @@ export const Answer = ({
                                     {`${++i}. ${x}`}
                                 </a>
                             );
-      
+                        })}
+                    </Stack>
+                </Stack.Item>
+            )}
+
+       
