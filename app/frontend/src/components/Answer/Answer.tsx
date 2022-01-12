@@ -77,4 +77,4 @@ export const Answer = ({
                 </Stack.Item>
             )}
 
-       
+            {!!parsedAnswer.followupQuestions.length && showFollowupQuestions && onFollowupQuestionClicked && (
