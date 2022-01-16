@@ -78,3 +78,5 @@ export const Answer = ({
             )}
 
             {!!parsedAnswer.followupQuestions.length && showFollowupQuestions && onFollowupQuestionClicked && (
+                <Stack.Item>
+                    <Stack horizontal wrap className={`${!!parsedAnswer.citation
