@@ -81,4 +81,6 @@ export const Answer = ({
                 <Stack.Item>
                     <Stack horizontal wrap className={`${!!parsedAnswer.citations.length ? styles.followupQuestionsList : ""}`} tokens={{ childrenGap: 6 }}>
                         <span className={styles.followupQuestionLearnMore}>Follow-up questions:</span>
-                
+                        {parsedAnswer.followupQuestions.map((x, i) => {
+                            return (
+      
