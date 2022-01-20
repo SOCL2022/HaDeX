@@ -83,4 +83,4 @@ export const Answer = ({
                         <span className={styles.followupQuestionLearnMore}>Follow-up questions:</span>
                         {parsedAnswer.followupQuestions.map((x, i) => {
                             return (
-      
+                                <a key={i} className={styles.followupQuestion} title={x} onCl
