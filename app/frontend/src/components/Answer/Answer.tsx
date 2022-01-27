@@ -85,4 +85,7 @@ export const Answer = ({
                             return (
                                 <a key={i} className={styles.followupQuestion} title={x} onClick={() => onFollowupQuestionClicked(x)}>
                                     {`${x}`}
-             
+                                </a>
+                            );
+                        })}
+                   
