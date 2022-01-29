@@ -88,4 +88,9 @@ export const Answer = ({
                                 </a>
                             );
                         })}
-                   
+                    </Stack>
+                </Stack.Item>
+            )}
+        </Stack>
+    );
+}
