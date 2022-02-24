@@ -8,4 +8,7 @@ interface Props {
     onRetry: () => void;
 }
 
-export const AnswerError = ({ error, onRetry }: Props)
+export const AnswerError = ({ error, onRetry }: Props) => {
+    return (
+        <Stack className={styles.answerContainer} verticalAlign="space-between">
+    
