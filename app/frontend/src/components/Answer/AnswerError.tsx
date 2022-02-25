@@ -17,4 +17,5 @@ export const AnswerError = ({ error, onRetry }: Props) => {
                 <p className={styles.answerText}>{error}</p>
             </Stack.Item>
 
-       
+            <PrimaryButton className={styles.retryButton} onClick={onRetry} text="Retry" />
+        </Stack>
