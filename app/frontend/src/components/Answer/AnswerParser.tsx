@@ -1,2 +1,5 @@
 import { renderToStaticMarkup } from "react-dom/server";
-import { 
+import { getCitationFilePath } from "../../api";
+
+type HtmlParsedAnswer = {
+    answerHtml: str
