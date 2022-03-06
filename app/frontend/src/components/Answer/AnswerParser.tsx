@@ -7,4 +7,5 @@ type HtmlParsedAnswer = {
     followupQuestions: string[];
 };
 
-export function parseAnswerToHtml(answer: stri
+export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFilePath: string) => void): HtmlParsedAnswer {
+    const citations
