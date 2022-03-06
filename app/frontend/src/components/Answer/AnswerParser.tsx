@@ -11,4 +11,5 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
     const citations: string[] = [];
     const followupQuestions: string[] = [];
 
-    // Extract any follow-up questions
+    // Extract any follow-up questions that might be in the answer
+    let parsedAnswer = answer.replace(/<<([^>>]+)>>/g, (match, 
