@@ -8,4 +8,7 @@ type HtmlParsedAnswer = {
 };
 
 export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFilePath: string) => void): HtmlParsedAnswer {
-    const citations
+    const citations: string[] = [];
+    const followupQuestions: string[] = [];
+
+    // Extract any follow-up questions
