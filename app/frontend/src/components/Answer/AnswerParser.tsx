@@ -17,4 +17,5 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
         return "";
     });
 
-    // trim any 
+    // trim any whitespace from the end of the answer after removing follow-up questions
+    parsedAnswer = p
