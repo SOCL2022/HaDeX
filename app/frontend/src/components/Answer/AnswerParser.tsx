@@ -18,4 +18,8 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
     });
 
     // trim any whitespace from the end of the answer after removing follow-up questions
-    parsedAnswer = p
+    parsedAnswer = parsedAnswer.trim();
+
+    const parts = parsedAnswer.split(/\[([^\]]+)\]/g);
+
+    const fragments: str
