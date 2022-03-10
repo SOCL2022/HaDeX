@@ -22,4 +22,6 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
 
     const parts = parsedAnswer.split(/\[([^\]]+)\]/g);
 
-    const fragments: str
+    const fragments: string[] = parts.map((part, index) => {
+        if (index % 2 === 0) {
+            return
