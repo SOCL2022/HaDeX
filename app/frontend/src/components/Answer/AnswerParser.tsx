@@ -24,4 +24,7 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
 
     const fragments: string[] = parts.map((part, index) => {
         if (index % 2 === 0) {
-            return
+            return part;
+        } else {
+            let citationIndex: number;
+            if (citations.indexOf(part) !
