@@ -27,4 +27,7 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
             return part;
         } else {
             let citationIndex: number;
-            if (citations.indexOf(part) !
+            if (citations.indexOf(part) !== -1) {
+                citationIndex = citations.indexOf(part) + 1;
+            } else {
+         
