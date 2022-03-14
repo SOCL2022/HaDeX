@@ -30,4 +30,8 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
             if (citations.indexOf(part) !== -1) {
                 citationIndex = citations.indexOf(part) + 1;
             } else {
+                citations.push(part);
+                citationIndex = citations.length;
+            }
+
          
