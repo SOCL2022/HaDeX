@@ -37,4 +37,5 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
             const path = getCitationFilePath(part);
 
             return renderToStaticMarkup(
-     
+                <a className="supContainer" title={part} onClick={() => onCitationClicked(path)}>
+                    <sup>{ci
