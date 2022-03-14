@@ -34,4 +34,7 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
                 citationIndex = citations.length;
             }
 
-         
+            const path = getCitationFilePath(part);
+
+            return renderToStaticMarkup(
+     
