@@ -45,4 +45,8 @@ export function parseAnswerToHtml(answer: string, onCitationClicked: (citationFi
     });
 
     return {
-        answerHtml: fragments.jo
+        answerHtml: fragments.join(""),
+        citations,
+        followupQuestions
+    };
+}
