@@ -1,3 +1,10 @@
 .container {
     display: flex;
-    align
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.4;
+}
