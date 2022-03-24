@@ -9,4 +9,6 @@ interface Props {
     disabled?: boolean;
 }
 
-export const ClearChatButton = ({ className, disabled, onClick }: Pr
+export const ClearChatButton = ({ className, disabled, onClick }: Props) => {
+    return (
+        <div className={`${styles.container} ${className ?? ""} ${disabled && sty
