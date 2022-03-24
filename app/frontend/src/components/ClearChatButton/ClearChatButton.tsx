@@ -6,4 +6,7 @@ import styles from "./ClearChatButton.module.css";
 interface Props {
     className?: string;
     onClick: () => void;
-    disab
+    disabled?: boolean;
+}
+
+export const ClearChatButton = ({ className, disabled, onClick }: Pr
