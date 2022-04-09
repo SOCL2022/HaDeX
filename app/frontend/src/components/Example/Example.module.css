@@ -24,4 +24,11 @@
     outline: 2px solid rgba(115, 118, 225, 1);
 }
 
-.exampl
+.exampleText {
+    margin: 0;
+    font-size: 22px;
+    width: 280px;
+    height: 100px;
+}
+
+@media only scre
