@@ -2,4 +2,8 @@ import styles from "./Example.module.css";
 
 interface Props {
     text: string;
-    va
+    value: string;
+    onClick: (value: string) => void;
+}
+
+export const Example = ({ text, value, onClick }: P
