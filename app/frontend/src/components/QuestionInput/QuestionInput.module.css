@@ -6,3 +6,11 @@
     padding: 15px;
     background: white;
 }
+
+.questionInputTextArea {
+    width: 100%;
+    line-height: 40px;
+}
+
+.questionInputButtonsContainer {
+    display
