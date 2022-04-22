@@ -18,4 +18,10 @@
     justify-content: flex-end;
 }
 
-.questionInputSendButton 
+.questionInputSendButton {
+    cursor: pointer;
+}
+
+.questionInputSendButtonDisabled {
+    opacity: 0.4;
+}
