@@ -6,4 +6,9 @@ import styles from "./QuestionInput.module.css";
 
 interface Props {
     onSend: (question: string) => void;
-   
+    disabled: boolean;
+    placeholder?: string;
+    clearOnSend?: boolean;
+}
+
+export const 
