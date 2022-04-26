@@ -11,4 +11,5 @@ interface Props {
     clearOnSend?: boolean;
 }
 
-export const 
+export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Props) => {
+    const [questi
