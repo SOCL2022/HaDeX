@@ -12,4 +12,7 @@ interface Props {
 }
 
 export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Props) => {
-    const [questi
+    const [question, setQuestion] = useState<string>("");
+
+    const sendQuestion = () => {
+        if (disabled || !question.trim())
