@@ -15,4 +15,11 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
     const [question, setQuestion] = useState<string>("");
 
     const sendQuestion = () => {
-        if (disabled || !question.trim())
+        if (disabled || !question.trim()) {
+            return;
+        }
+
+        onSend(question);
+
+        if (clearOnSend) {
+            setQuestion("
