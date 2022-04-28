@@ -22,4 +22,8 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
         onSend(question);
 
         if (clearOnSend) {
-            setQuestion("
+            setQuestion("");
+        }
+    };
+
+    const onEnterPress = (ev: React.KeyboardEvent<Element>) => {
