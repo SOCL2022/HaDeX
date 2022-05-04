@@ -33,4 +33,6 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
         }
     };
 
-    const onQuestionChange = (_ev: React.FormEvent<HTMLInputEl
+    const onQuestionChange = (_ev: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => {
+        if (!newValue) {
+            setQuestion(
