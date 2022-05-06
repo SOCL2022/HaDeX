@@ -46,3 +46,5 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
     return (
         <Stack horizontal className={styles.questionInputContainer}>
             <TextField
+                className={styles.questionInputTextArea}
+                placeholder={placeholder}
