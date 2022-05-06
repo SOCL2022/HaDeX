@@ -41,4 +41,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
         }
     };
 
-    const se
+    const sendQuestionDisabled = disabled || !question.trim();
+
+    return (
+        <Stack ho
