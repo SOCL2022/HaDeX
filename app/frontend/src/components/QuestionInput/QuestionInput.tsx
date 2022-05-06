@@ -44,4 +44,5 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
     const sendQuestionDisabled = disabled || !question.trim();
 
     return (
-        <Stack ho
+        <Stack horizontal className={styles.questionInputContainer}>
+            <TextField
