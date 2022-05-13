@@ -51,4 +51,6 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
                 multiline
                 resizable={false}
                 borderless
-  
+                value={question}
+                onChange={onQuestionChange}
+                onKeyDown={onEnt
