@@ -48,3 +48,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
             <TextField
                 className={styles.questionInputTextArea}
                 placeholder={placeholder}
+                multiline
+                resizable={false}
+                borderless
+  
