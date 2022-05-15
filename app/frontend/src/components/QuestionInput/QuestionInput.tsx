@@ -57,4 +57,5 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
             />
             <div className={styles.questionInputButtonsContainer}>
                 <div
-                    className={`${styles.questionInputSendButton} ${sendQuestionDisabl
+                    className={`${styles.questionInputSendButton} ${sendQuestionDisabled ? styles.questionInputSendButtonDisabled : ""}`}
+                    aria-label="Ask
