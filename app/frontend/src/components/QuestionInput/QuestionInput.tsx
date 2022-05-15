@@ -56,4 +56,5 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
                 onKeyDown={onEnterPress}
             />
             <div className={styles.questionInputButtonsContainer}>
-           
+                <div
+                    className={`${styles.questionInputSendButton} ${sendQuestionDisabl
