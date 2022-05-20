@@ -63,4 +63,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
                 >
                     <Send28Filled primaryFill="rgba(115, 118, 225, 1)" />
                 </div>
-            </di
+            </div>
+        </Stack>
+    );
+};
