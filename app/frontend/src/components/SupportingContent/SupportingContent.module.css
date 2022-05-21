@@ -1,1 +1,6 @@
-.supporting
+.supportingContentNavList {
+    list-style: none;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+ 
