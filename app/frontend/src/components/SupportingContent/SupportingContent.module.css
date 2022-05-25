@@ -14,4 +14,12 @@
     outline: transparent solid 1px;
 
     display: flex;
-    flex-
+    flex-direction: column;
+    padding: 20px;
+}
+
+.supportingContentItemHeader {
+    margin: 0;
+}
+
+.suppor
