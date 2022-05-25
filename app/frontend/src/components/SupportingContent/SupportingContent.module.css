@@ -3,4 +3,9 @@
     padding-left: 5px;
     display: flex;
     flex-direction: column;
- 
+    gap: 10px;
+}
+
+.supportingContentItem {
+    word-break: break-word;
+    background: r
