@@ -1,1 +1,3 @@
-import { parseSupportingContentItem } fro
+import { parseSupportingContentItem } from "./SupportingContentParser";
+
+import styles from "./SupportingContent.module.css";
