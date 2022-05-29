@@ -6,4 +6,6 @@ interface Props {
     supportingContent: string[];
 }
 
-export const SupportingContent = (
+export const SupportingContent = ({ supportingContent }: Props) => {
+    return (
+        <ul className={styles.supportingContentNa
