@@ -22,4 +22,7 @@
     margin: 0;
 }
 
-.suppor
+.supportingContentItemText {
+    margin-bottom: 0;
+    font-weight: 300;
+}
