@@ -10,4 +10,7 @@ export const SupportingContent = ({ supportingContent }: Props) => {
     return (
         <ul className={styles.supportingContentNavList}>
             {supportingContent.map((x, i) => {
-                const parsed = parseSupportingConten
+                const parsed = parseSupportingContentItem(x);
+
+                return (
+                    <li className={styles.supportingCon
