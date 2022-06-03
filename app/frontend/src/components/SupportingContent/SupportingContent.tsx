@@ -20,4 +20,5 @@ export const SupportingContent = ({ supportingContent }: Props) => {
                 );
             })}
         </ul>
- 
+    );
+};
