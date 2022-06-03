@@ -15,4 +15,9 @@ export const SupportingContent = ({ supportingContent }: Props) => {
                 return (
                     <li className={styles.supportingContentItem}>
                         <h4 className={styles.supportingContentItemHeader}>{parsed.title}</h4>
-                        <p className={styles.supportingContentItemText}>{parsed
+                        <p className={styles.supportingContentItemText}>{parsed.content}</p>
+                    </li>
+                );
+            })}
+        </ul>
+ 
