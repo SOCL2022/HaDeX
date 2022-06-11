@@ -6,4 +6,8 @@ interface Props {
 
 export const UserChatMessage = ({ message }: Props) => {
     return (
-        <div className={styles
+        <div className={styles.container}>
+            <div className={styles.message}>{message}</div>
+        </div>
+    );
+};
