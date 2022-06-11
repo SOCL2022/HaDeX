@@ -1,4 +1,9 @@
 import styles from "./UserChatMessage.module.css";
 
 interface Props {
-    mes
+    message: string;
+}
+
+export const UserChatMessage = ({ message }: Props) => {
+    return (
+        <div className={styles
