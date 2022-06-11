@@ -2,4 +2,14 @@
     box-sizing: border-box;
 }
 
-html
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #f2f2f2;
+
+    
