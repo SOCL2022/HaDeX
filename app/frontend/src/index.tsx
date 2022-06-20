@@ -5,4 +5,7 @@ import { initializeIcons } from "@fluentui/react";
 
 import "./index.css";
 
-import Layout fro
+import Layout from "./pages/layout/Layout";
+import NoPage from "./pages/NoPage";
+import OneShot from "./pages/oneshot/OneShot";
+impo
