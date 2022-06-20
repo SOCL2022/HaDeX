@@ -8,4 +8,9 @@ import "./index.css";
 import Layout from "./pages/layout/Layout";
 import NoPage from "./pages/NoPage";
 import OneShot from "./pages/oneshot/OneShot";
-impo
+import Chat from "./pages/chat/Chat";
+
+initializeIcons();
+
+export default function App() {
+    return
