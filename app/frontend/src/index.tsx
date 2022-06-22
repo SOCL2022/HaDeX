@@ -13,4 +13,8 @@ import Chat from "./pages/chat/Chat";
 initializeIcons();
 
 export default function App() {
-    return
+    return (
+        <HashRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+            
