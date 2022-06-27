@@ -18,4 +18,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Chat />} />
-                    <Route path="qa" element={
+                    <Route path="qa" element={<OneShot />} />
+                    <Route path="*" element={<NoPage />} />
+                </Route>
+            </
