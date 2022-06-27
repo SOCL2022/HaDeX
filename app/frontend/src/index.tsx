@@ -21,4 +21,9 @@ export default function App() {
                     <Route path="qa" element={<OneShot />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>
-            </
+            </Routes>
+        </HashRouter>
+    );
+}
+
+ReactDOM.createRoot(document.getElementById("r
