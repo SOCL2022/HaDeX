@@ -19,3 +19,120 @@ const Chat = () => {
     const [promptTemplate, setPromptTemplate] = useState<string>("");
     const [retrieveCount, setRetrieveCount] = useState<number>(3);
     const [useSemanticRanker, setUseSemanticRanker] = useState<boolean>(true);
+    const [useSemanticCaptions, setUseSemanticCaptions] = useState<boolean>(false);
+    const [excludeCategory, setExcludeCategory] = useState<string>("");
+    const [useSuggestFollowupQuestions, setUseSuggestFollowupQuestions] = useState<boolean>(false);
+
+    const lastQuestionRef = useRef<string>("");
+    const chatMessageStreamEnd = useRef<HTMLDivElement | null>(null);
+
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [error, setError] = useState<unknown>();
+
+    const [activeCitation, setActiveCitation] = useState<string>();
+    const [activeAnalysisPanelTab, setActiveAnalysisPanelTab] = useState<AnalysisPanelTabs | undefined>(undefined);
+
+    const [selectedAnswer, setSelectedAnswer] = useState<number>(0);
+    const [answers, setAnswers] = useState<[user: string, response: AskResponse][]>([]);
+
+    const makeApiRequest = async (question: string) => {
+        lastQuestionRef.current = question;
+
+        error && setError(undefined);
+        setIsLoading(true);
+        setActiveCitation(undefined);
+        setActiveAnalysisPanelTab(undefined);
+
+        try {
+            const history: ChatTurn[] = answers.map(a => ({ user: a[0], bot: a[1].answer }));
+            const request: ChatRequest = {
+                history: [...history, { user: question, bot: undefined }],
+                approach: Approaches.ReadRetrieveRead,
+                overrides: {
+                    promptTemplate: promptTemplate.length === 0 ? undefined : promptTemplate,
+                    excludeCategory: excludeCategory.length === 0 ? undefined : excludeCategory,
+                    top: retrieveCount,
+                    semanticRanker: useSemanticRanker,
+                    semanticCaptions: useSemanticCaptions,
+                    suggestFollowupQuestions: useSuggestFollowupQuestions
+                }
+            };
+            const result = await chatApi(request);
+            setAnswers([...answers, [question, result]]);
+        } catch (e) {
+            setError(e);
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    const clearChat = () => {
+        lastQuestionRef.current = "";
+        error && setError(undefined);
+        setActiveCitation(undefined);
+        setActiveAnalysisPanelTab(undefined);
+        setAnswers([]);
+    };
+
+    useEffect(() => chatMessageStreamEnd.current?.scrollIntoView({ behavior: "smooth" }), [isLoading]);
+
+    const onPromptTemplateChange = (_ev?: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => {
+        setPromptTemplate(newValue || "");
+    };
+
+    const onRetrieveCountChange = (_ev?: React.SyntheticEvent<HTMLElement, Event>, newValue?: string) => {
+        setRetrieveCount(parseInt(newValue || "3"));
+    };
+
+    const onUseSemanticRankerChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => {
+        setUseSemanticRanker(!!checked);
+    };
+
+    const onUseSemanticCaptionsChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => {
+        setUseSemanticCaptions(!!checked);
+    };
+
+    const onExcludeCategoryChanged = (_ev?: React.FormEvent, newValue?: string) => {
+        setExcludeCategory(newValue || "");
+    };
+
+    const onUseSuggestFollowupQuestionsChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => {
+        setUseSuggestFollowupQuestions(!!checked);
+    };
+
+    const onExampleClicked = (example: string) => {
+        makeApiRequest(example);
+    };
+
+    const onShowCitation = (citation: string, index: number) => {
+        if (activeCitation === citation && activeAnalysisPanelTab === AnalysisPanelTabs.CitationTab && selectedAnswer === index) {
+            setActiveAnalysisPanelTab(undefined);
+        } else {
+            setActiveCitation(citation);
+            setActiveAnalysisPanelTab(AnalysisPanelTabs.CitationTab);
+        }
+
+        setSelectedAnswer(index);
+    };
+
+    const onToggleTab = (tab: AnalysisPanelTabs, index: number) => {
+        if (activeAnalysisPanelTab === tab && selectedAnswer === index) {
+            setActiveAnalysisPanelTab(undefined);
+        } else {
+            setActiveAnalysisPanelTab(tab);
+        }
+
+        setSelectedAnswer(index);
+    };
+
+    return (
+        <div className={styles.container}>
+            <div className={styles.commandsContainer}>
+                <ClearChatButton className={styles.commandButton} onClick={clearChat} disabled={!lastQuestionRef.current || isLoading} />
+                <SettingsButton className={styles.commandButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
+            </div>
+            <div className={styles.chatRoot}>
+                <div className={styles.chatContainer}>
+                    {!lastQuestionRef.current ? (
+                        <div className={styles.chatEmptyState}>
+                            <SparkleFilled fontSize={"120px"} primaryFill={"rgba(115, 118, 225, 1)"} aria-hidden="true" aria-label="Chat logo" />
