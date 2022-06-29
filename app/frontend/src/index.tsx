@@ -26,4 +26,7 @@ export default function App() {
     );
 }
 
-ReactDOM.createRoot(document.getElementById("r
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+    <React.StrictMode>
+        <App />
+    </React.Stric
