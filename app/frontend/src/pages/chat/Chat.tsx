@@ -225,3 +225,31 @@ const Chat = () => {
                         max={50}
                         defaultValue={retrieveCount.toString()}
                         onChange={onRetrieveCountChange}
+                    />
+                    <TextField className={styles.chatSettingsSeparator} label="Exclude category" onChange={onExcludeCategoryChanged} />
+                    <Checkbox
+                        className={styles.chatSettingsSeparator}
+                        checked={useSemanticRanker}
+                        label="Use semantic ranker for retrieval"
+                        onChange={onUseSemanticRankerChange}
+                    />
+                    <Checkbox
+                        className={styles.chatSettingsSeparator}
+                        checked={useSemanticCaptions}
+                        label="Use query-contextual summaries instead of whole documents"
+                        onChange={onUseSemanticCaptionsChange}
+                        disabled={!useSemanticRanker}
+                    />
+                    <Checkbox
+                        className={styles.chatSettingsSeparator}
+                        checked={useSuggestFollowupQuestions}
+                        label="Suggest follow-up questions"
+                        onChange={onUseSuggestFollowupQuestionsChange}
+                    />
+                </Panel>
+            </div>
+        </div>
+    );
+};
+
+export default Chat;
