@@ -19,4 +19,10 @@
 
 .headerTitleContainer {
     display: flex;
-    align-it
+    align-items: center;
+    margin-right: 40px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.headerLogo
