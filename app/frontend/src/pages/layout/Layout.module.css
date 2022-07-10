@@ -25,4 +25,14 @@
     text-decoration: none;
 }
 
-.headerLogo
+.headerLogo {
+    height: 40px;
+}
+
+.headerTitle {
+    margin-left: 12px;
+    font-weight: 600;
+}
+
+.headerNavList {
+   
