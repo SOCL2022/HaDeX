@@ -9,4 +9,8 @@
     color: #f2f2f2;
 }
 
-.headerContain
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-
