@@ -35,4 +35,10 @@
 }
 
 .headerNavList {
-   
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.headerNavPageLink {
+    color: #f2f
