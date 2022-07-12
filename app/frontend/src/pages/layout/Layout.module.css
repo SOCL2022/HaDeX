@@ -41,4 +41,8 @@
 }
 
 .headerNavPageLink {
-    color: #f2f
+    color: #f2f2f2;
+    text-decoration: none;
+    opacity: 0.75;
+
+    transition-timing-function: cubic-bezi
