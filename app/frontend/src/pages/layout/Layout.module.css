@@ -52,3 +52,8 @@
 
 .headerNavPageLink:hover {
     opacity: 1;
+}
+
+.headerNavPageLinkActive {
+    color: #f2f2f2;
+    text-decoration: no
