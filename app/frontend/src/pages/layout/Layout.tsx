@@ -5,4 +5,6 @@ import github from "../../assets/github.svg";
 import styles from "./Layout.module.css";
 
 const Layout = () => {
-    return 
+    return (
+        <div className={styles.layout}>
+            <header className={styles
