@@ -12,4 +12,5 @@ const Layout = () => {
                     <Link to="/" className={styles.headerTitleContainer}>
                         <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
                     </Link>
-  
+                    <nav>
+                        <ul className={styles.headerNavList}>
