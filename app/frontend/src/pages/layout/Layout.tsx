@@ -15,4 +15,5 @@ const Layout = () => {
                     <nav>
                         <ul className={styles.headerNavList}>
                             <li>
-                                <NavLink to="/" className={({ 
+                                <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
+                              
