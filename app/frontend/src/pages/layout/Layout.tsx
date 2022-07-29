@@ -14,3 +14,5 @@ const Layout = () => {
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
+                            <li>
+                                <NavLink to="/" className={({ 
