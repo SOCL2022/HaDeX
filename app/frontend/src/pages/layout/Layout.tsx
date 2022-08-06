@@ -19,4 +19,5 @@ const Layout = () => {
                                     Chat
                                 </NavLink>
                             </li>
-                
+                            <li className={styles.headerNavLeftMargin}>
+                                <Nav
