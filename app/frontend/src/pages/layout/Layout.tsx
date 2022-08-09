@@ -24,4 +24,5 @@ const Layout = () => {
                                     Ask a question
                                 </NavLink>
                             </li>
-                            <li className={style
+                            <li className={styles.headerNavLeftMargin}>
+                                <a href="https://aka.ms/entgp
