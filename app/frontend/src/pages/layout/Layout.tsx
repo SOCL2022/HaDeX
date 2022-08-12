@@ -28,4 +28,5 @@ const Layout = () => {
                                 <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
                                     <img
                                         src={github}
-                                   
+                                        alt="Github logo"
+                                        aria-label="Link to github r
