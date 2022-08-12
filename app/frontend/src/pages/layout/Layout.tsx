@@ -31,4 +31,6 @@ const Layout = () => {
                                         alt="Github logo"
                                         aria-label="Link to github repository"
                                         width="20px"
-                                  
+                                        height="20px"
+                                        className={styles.githubLogo}
+                 
