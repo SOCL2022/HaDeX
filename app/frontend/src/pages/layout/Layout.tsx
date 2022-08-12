@@ -29,4 +29,6 @@ const Layout = () => {
                                     <img
                                         src={github}
                                         alt="Github logo"
-                                        aria-label="Link to github r
+                                        aria-label="Link to github repository"
+                                        width="20px"
+                                  
