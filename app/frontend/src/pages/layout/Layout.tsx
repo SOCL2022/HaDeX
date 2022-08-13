@@ -40,4 +40,11 @@ const Layout = () => {
                     </nav>
                     <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h4>
                 </div>
-            </header
+            </header>
+
+            <Outlet />
+        </div>
+    );
+};
+
+export default Layout;
