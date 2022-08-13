@@ -33,4 +33,7 @@ const Layout = () => {
                                         width="20px"
                                         height="20px"
                                         className={styles.githubLogo}
-                 
+                                    />
+                                </a>
+                            </li>
+ 
