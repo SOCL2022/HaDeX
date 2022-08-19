@@ -48,3 +48,107 @@ const OneShot = () => {
                     promptTemplatePrefix: promptTemplatePrefix.length === 0 ? undefined : promptTemplatePrefix,
                     promptTemplateSuffix: promptTemplateSuffix.length === 0 ? undefined : promptTemplateSuffix,
                     excludeCategory: excludeCategory.length === 0 ? undefined : excludeCategory,
+                    top: retrieveCount,
+                    semanticRanker: useSemanticRanker,
+                    semanticCaptions: useSemanticCaptions
+                }
+            };
+            const result = await askApi(request);
+            setAnswer(result);
+        } catch (e) {
+            setError(e);
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    const onPromptTemplateChange = (_ev?: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => {
+        setPromptTemplate(newValue || "");
+    };
+
+    const onPromptTemplatePrefixChange = (_ev?: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => {
+        setPromptTemplatePrefix(newValue || "");
+    };
+
+    const onPromptTemplateSuffixChange = (_ev?: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => {
+        setPromptTemplateSuffix(newValue || "");
+    };
+
+    const onRetrieveCountChange = (_ev?: React.SyntheticEvent<HTMLElement, Event>, newValue?: string) => {
+        setRetrieveCount(parseInt(newValue || "3"));
+    };
+
+    const onApproachChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, option?: IChoiceGroupOption) => {
+        setApproach((option?.key as Approaches) || Approaches.RetrieveThenRead);
+    };
+
+    const onUseSemanticRankerChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => {
+        setUseSemanticRanker(!!checked);
+    };
+
+    const onUseSemanticCaptionsChange = (_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean) => {
+        setUseSemanticCaptions(!!checked);
+    };
+
+    const onExcludeCategoryChanged = (_ev?: React.FormEvent, newValue?: string) => {
+        setExcludeCategory(newValue || "");
+    };
+
+    const onExampleClicked = (example: string) => {
+        makeApiRequest(example);
+    };
+
+    const onShowCitation = (citation: string) => {
+        if (activeCitation === citation && activeAnalysisPanelTab === AnalysisPanelTabs.CitationTab) {
+            setActiveAnalysisPanelTab(undefined);
+        } else {
+            setActiveCitation(citation);
+            setActiveAnalysisPanelTab(AnalysisPanelTabs.CitationTab);
+        }
+    };
+
+    const onToggleTab = (tab: AnalysisPanelTabs) => {
+        if (activeAnalysisPanelTab === tab) {
+            setActiveAnalysisPanelTab(undefined);
+        } else {
+            setActiveAnalysisPanelTab(tab);
+        }
+    };
+
+    const approaches: IChoiceGroupOption[] = [
+        {
+            key: Approaches.RetrieveThenRead,
+            text: "Retrieve-Then-Read"
+        },
+        {
+            key: Approaches.ReadRetrieveRead,
+            text: "Read-Retrieve-Read"
+        },
+        {
+            key: Approaches.ReadDecomposeAsk,
+            text: "Read-Decompose-Ask"
+        }
+    ];
+
+    return (
+        <div className={styles.oneshotContainer}>
+            <div className={styles.oneshotTopSection}>
+                <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
+                <h1 className={styles.oneshotTitle}>Ask your data</h1>
+                <div className={styles.oneshotQuestionInput}>
+                    <QuestionInput
+                        placeholder="Example: Does my plan cover annual eye exams?"
+                        disabled={isLoading}
+                        onSend={question => makeApiRequest(question)}
+                    />
+                </div>
+            </div>
+            <div className={styles.oneshotBottomSection}>
+                {isLoading && <Spinner label="Generating answer" />}
+                {!lastQuestionRef.current && <ExampleList onExampleClicked={onExampleClicked} />}
+                {!isLoading && answer && !error && (
+                    <div className={styles.oneshotAnswerContainer}>
+                        <Answer
+                            answer={answer}
+                            onCitationClicked={x => onShowCitation(x)}
+                            onThoughtProcessClicked={() => onToggleTab(AnalysisPanelTabs.ThoughtProcessTab)}
