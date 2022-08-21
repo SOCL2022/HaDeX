@@ -7,4 +7,8 @@ export default defineConfig({
     build: {
         outDir: "../backend/static",
         emptyOutDir: true,
-        s
+        sourcemap: true
+    },
+    server: {
+        proxy: {
+            "/ask": "http://localh
