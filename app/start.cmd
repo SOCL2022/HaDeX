@@ -30,4 +30,12 @@ echo Restoring frontend npm packages
 echo.
 cd ../frontend
 call npm install
-if "%errorlevel%" neq "
+if "%errorlevel%" neq "0" (
+    echo Failed to restore frontend npm packages
+    exit /B %errorlevel%
+)
+
+echo.
+echo Building frontend
+echo.
+call npm 
