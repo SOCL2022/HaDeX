@@ -16,4 +16,8 @@ if "%errorlevel%" neq "0" (
 )
 
 echo.
-echo Restoring backend p
+echo Restoring backend python packages
+echo.
+cd backend
+call pip install -r requirements.txt
+if "%errorlevel%" neq "
