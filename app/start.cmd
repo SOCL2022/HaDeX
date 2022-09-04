@@ -11,4 +11,9 @@ for /f "tokens=1* delims==" %%a in ('azd env get-values') do (
 )
 
 if "%errorlevel%" neq "0" (
-    echo Failed to load environm
+    echo Failed to load environment varaiables from azd environment
+    exit /B %errorlevel%
+)
+
+echo.
+echo Restoring backend p
