@@ -20,4 +20,10 @@ echo Restoring backend python packages
 echo.
 cd backend
 call pip install -r requirements.txt
-if "%errorlevel%" neq "
+if "%errorlevel%" neq "0" (
+    echo Failed to restore backend python packages
+    exit /B %errorlevel%
+)
+
+echo.
+echo Re
