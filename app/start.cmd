@@ -26,4 +26,8 @@ if "%errorlevel%" neq "0" (
 )
 
 echo.
-echo Re
+echo Restoring frontend npm packages
+echo.
+cd ../frontend
+call npm install
+if "%errorlevel%" neq "
