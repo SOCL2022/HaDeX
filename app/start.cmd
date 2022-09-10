@@ -45,4 +45,9 @@ if "%errorlevel%" neq "0" (
 )
 
 echo.
-ec
+echo Starting backend
+echo.
+cd ../backend
+start http://127.0.0.1:5000
+call python ./app.py
+if "%erro
