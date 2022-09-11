@@ -50,4 +50,7 @@ echo.
 cd ../backend
 start http://127.0.0.1:5000
 call python ./app.py
-if "%erro
+if "%errorlevel%" neq "0" (
+    echo Failed to start backend
+    exit /B %errorlevel%
+)
