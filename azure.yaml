@@ -4,4 +4,10 @@ name: azure-search-openai-demo
 metadata:
   template: azure-search-openai-demo@0.0.1-beta
 services:
-  backend
+  backend:
+    project: ./app/backend
+    language: py
+    host: appservice
+hooks:
+    postprovision:
+  
