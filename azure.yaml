@@ -10,4 +10,7 @@ services:
     host: appservice
 hooks:
     postprovision:
-  
+      shell: pwsh
+      run: ./scripts/prepdocs.ps1
+      interactive: true
+      continueOnError: fal
