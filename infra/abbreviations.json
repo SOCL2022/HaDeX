@@ -1,2 +1,5 @@
 {
-  "analysisServicesServ
+  "analysisServicesServers": "as",
+  "apiManagementService": "apim-",
+  "appConfigurationConfigurationStores": "appcs-",
+  
