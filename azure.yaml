@@ -17,3 +17,7 @@ hooks:
     predeploy:
         shell: pwsh
         run:  cd ./app/frontend;npm install;npm run build
+        interactive: true
+        continueOnError: false
+
+      
