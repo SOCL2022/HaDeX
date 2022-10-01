@@ -6,4 +6,8 @@
   "appContainerApps": "ca-",
   "authorizationPolicyDefinitions": "policy-",
   "automationAutomationAccounts": "aa-",
-  "blueprintBlueprints": "bp
+  "blueprintBlueprints": "bp-",
+  "blueprintBlueprintsArtifacts": "bpa-",
+  "cacheRedis": "redis-",
+  "cdnProfiles": "cdnp-",
+  "cdnProfilesEn
