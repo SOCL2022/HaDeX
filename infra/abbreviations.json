@@ -10,4 +10,6 @@
   "blueprintBlueprintsArtifacts": "bpa-",
   "cacheRedis": "redis-",
   "cdnProfiles": "cdnp-",
-  "cdnProfilesEn
+  "cdnProfilesEndpoints": "cdne-",
+  "cognitiveServicesAccounts": "cog-",
+  "cognitiveServicesFormRec
