@@ -21,4 +21,6 @@
   "computeDisksOs": "osdisk",
   "computeGalleries": "gal",
   "computeSnapshots": "snap-",
-  "compu
+  "computeVirtualMachines": "vm",
+  "computeVirtualMachineScaleSets": "vmss-",
+  "containerInstanceContainerGr
