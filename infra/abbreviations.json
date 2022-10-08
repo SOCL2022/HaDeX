@@ -17,4 +17,8 @@
   "computeAvailabilitySets": "avail-",
   "computeCloudServices": "cld-",
   "computeDiskEncryptionSets": "des",
-  "computeDisks": "
+  "computeDisks": "disk",
+  "computeDisksOs": "osdisk",
+  "computeGalleries": "gal",
+  "computeSnapshots": "snap-",
+  "compu
