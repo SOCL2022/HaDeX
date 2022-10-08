@@ -25,4 +25,7 @@
   "computeVirtualMachineScaleSets": "vmss-",
   "containerInstanceContainerGroups": "ci",
   "containerRegistryRegistries": "cr",
-  "containerServiceManagedClusters
+  "containerServiceManagedClusters": "aks-",
+  "databricksWorkspaces": "dbw-",
+  "dataFactoryFactories": "adf-",
+  "dataLakeAnalyticsAccounts
