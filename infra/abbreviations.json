@@ -23,4 +23,6 @@
   "computeSnapshots": "snap-",
   "computeVirtualMachines": "vm",
   "computeVirtualMachineScaleSets": "vmss-",
-  "containerInstanceContainerGr
+  "containerInstanceContainerGroups": "ci",
+  "containerRegistryRegistries": "cr",
+  "containerServiceManagedClusters
