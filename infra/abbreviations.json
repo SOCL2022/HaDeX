@@ -31,4 +31,7 @@
   "dataLakeAnalyticsAccounts": "dla",
   "dataLakeStoreAccounts": "dls",
   "dataMigrationServices": "dms-",
-  "dBforMySQLServers": "my
+  "dBforMySQLServers": "mysql-",
+  "dBforPostgreSQLServers": "psql-",
+  "devicesIotHubs": "iot-",
+  "devicesProvisioningServices": "p
