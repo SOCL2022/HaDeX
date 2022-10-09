@@ -28,4 +28,7 @@
   "containerServiceManagedClusters": "aks-",
   "databricksWorkspaces": "dbw-",
   "dataFactoryFactories": "adf-",
-  "dataLakeAnalyticsAccounts
+  "dataLakeAnalyticsAccounts": "dla",
+  "dataLakeStoreAccounts": "dls",
+  "dataMigrationServices": "dms-",
+  "dBforMySQLServers": "my
