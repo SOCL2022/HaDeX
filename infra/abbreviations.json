@@ -34,4 +34,6 @@
   "dBforMySQLServers": "mysql-",
   "dBforPostgreSQLServers": "psql-",
   "devicesIotHubs": "iot-",
-  "devicesProvisioningServices": "p
+  "devicesProvisioningServices": "provs-",
+  "devicesProvisioningServicesCertificates": "pcert-",
+  "documentDBDatabaseAccounts": 
