@@ -47,4 +47,7 @@
   "hdInsightClustersKafka": "kafka-",
   "hdInsightClustersMl": "mls-",
   "hdInsightClustersSpark": "spark-",
-  "hdInsightClustersSt
+  "hdInsightClustersStorm": "storm-",
+  "hybridComputeMachines": "arcs-",
+  "insightsActionGroups": "ag-",
+  "insightsCo
