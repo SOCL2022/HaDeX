@@ -44,4 +44,7 @@
   "eventHubNamespacesEventHubs": "evh-",
   "hdInsightClustersHadoop": "hadoop-",
   "hdInsightClustersHbase": "hbase-",
-  "hdInsightClustersKaf
+  "hdInsightClustersKafka": "kafka-",
+  "hdInsightClustersMl": "mls-",
+  "hdInsightClustersSpark": "spark-",
+  "hdInsightClustersSt
