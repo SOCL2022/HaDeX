@@ -42,4 +42,6 @@
   "eventGridEventSubscriptions": "evgs-",
   "eventHubNamespaces": "evhns-",
   "eventHubNamespacesEventHubs": "evh-",
-  "hdInsig
+  "hdInsightClustersHadoop": "hadoop-",
+  "hdInsightClustersHbase": "hbase-",
+  "hdInsightClustersKaf
