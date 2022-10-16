@@ -50,4 +50,7 @@
   "hdInsightClustersStorm": "storm-",
   "hybridComputeMachines": "arcs-",
   "insightsActionGroups": "ag-",
-  "insightsCo
+  "insightsComponents": "appi-",
+  "keyVaultVaults": "kv-",
+  "kubernetesConnectedClusters": "arck",
+  "kustoClusters": "de
