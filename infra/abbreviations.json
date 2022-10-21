@@ -53,4 +53,7 @@
   "insightsComponents": "appi-",
   "keyVaultVaults": "kv-",
   "kubernetesConnectedClusters": "arck",
-  "kustoClusters": "de
+  "kustoClusters": "dec",
+  "kustoClustersDatabases": "dedb",
+  "logicIntegrationAccounts": "ia-",
+  "logi
