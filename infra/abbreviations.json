@@ -58,4 +58,6 @@
   "logicIntegrationAccounts": "ia-",
   "logicWorkflows": "logic-",
   "machineLearningServicesWorkspaces": "mlw-",
-  "managedIdentityUserAssigned
+  "managedIdentityUserAssignedIdentities": "id-",
+  "managementManagementGroups": "mg-",
+  "migrateAssessmentProject
