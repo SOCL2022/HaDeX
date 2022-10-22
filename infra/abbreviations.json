@@ -63,4 +63,7 @@
   "migrateAssessmentProjects": "migr-",
   "networkApplicationGateways": "agw-",
   "networkApplicationSecurityGroups": "asg-",
-  "net
+  "networkAzureFirewalls": "afw-",
+  "networkBastionHosts": "bas-",
+  "networkConnections": "con-",
+  "
