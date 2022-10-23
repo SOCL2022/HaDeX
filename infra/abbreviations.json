@@ -66,4 +66,6 @@
   "networkAzureFirewalls": "afw-",
   "networkBastionHosts": "bas-",
   "networkConnections": "con-",
-  "
+  "networkDnsZones": "dnsz-",
+  "networkExpressRouteCircuits": "erc-",
+  "networkFirewallPolicies": 
