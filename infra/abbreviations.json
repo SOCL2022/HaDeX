@@ -68,4 +68,7 @@
   "networkConnections": "con-",
   "networkDnsZones": "dnsz-",
   "networkExpressRouteCircuits": "erc-",
-  "networkFirewallPolicies": 
+  "networkFirewallPolicies": "afwp-",
+  "networkFirewallPoliciesWebApplication": "waf",
+  "networkFirewallPoliciesRuleGroups": "wafrg",
+ 
