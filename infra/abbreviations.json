@@ -71,4 +71,5 @@
   "networkFirewallPolicies": "afwp-",
   "networkFirewallPoliciesWebApplication": "waf",
   "networkFirewallPoliciesRuleGroups": "wafrg",
- 
+  "networkFrontDoors": "fd-",
+  "networkFrontdoorWebApplicationFirewallPolicies": "fdfp-
