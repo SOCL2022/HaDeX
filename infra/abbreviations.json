@@ -75,4 +75,6 @@
   "networkFrontdoorWebApplicationFirewallPolicies": "fdfp-",
   "networkLoadBalancersExternal": "lbe-",
   "networkLoadBalancersInternal": "lbi-",
-  "networ
+  "networkLoadBalancersInboundNatRules": "rule-",
+  "networkLocalNetworkGateways": "lgw-",
+  "networkNatGateways": 
