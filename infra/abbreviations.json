@@ -72,4 +72,7 @@
   "networkFirewallPoliciesWebApplication": "waf",
   "networkFirewallPoliciesRuleGroups": "wafrg",
   "networkFrontDoors": "fd-",
-  "networkFrontdoorWebApplicationFirewallPolicies": "fdfp-
+  "networkFrontdoorWebApplicationFirewallPolicies": "fdfp-",
+  "networkLoadBalancersExternal": "lbe-",
+  "networkLoadBalancersInternal": "lbi-",
+  "networ
