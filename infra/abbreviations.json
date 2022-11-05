@@ -80,4 +80,6 @@
   "networkNatGateways": "ng-",
   "networkNetworkInterfaces": "nic-",
   "networkNetworkSecurityGroups": "nsg-",
-  "networkNetwork
+  "networkNetworkSecurityGroupsSecurityRules": "nsgsr-",
+  "networkNetworkWatchers": "nw-",
+  "netw
