@@ -77,4 +77,7 @@
   "networkLoadBalancersInternal": "lbi-",
   "networkLoadBalancersInboundNatRules": "rule-",
   "networkLocalNetworkGateways": "lgw-",
-  "networkNatGateways": 
+  "networkNatGateways": "ng-",
+  "networkNetworkInterfaces": "nic-",
+  "networkNetworkSecurityGroups": "nsg-",
+  "networkNetwork
