@@ -82,4 +82,6 @@
   "networkNetworkSecurityGroups": "nsg-",
   "networkNetworkSecurityGroupsSecurityRules": "nsgsr-",
   "networkNetworkWatchers": "nw-",
-  "netw
+  "networkPrivateDnsZones": "pdnsz-",
+  "networkPrivateLinkServices": "pl-",
+  "networkPublicIPAddresses": "pi
