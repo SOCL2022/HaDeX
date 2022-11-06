@@ -87,4 +87,6 @@
   "networkPublicIPAddresses": "pip-",
   "networkPublicIPPrefixes": "ippre-",
   "networkRouteFilters": "rf-",
-  "networkRouteTable
+  "networkRouteTables": "rt-",
+  "networkRouteTablesRoutes": "udr-",
+  "networkTrafficManagerProfiles": "traf-",
