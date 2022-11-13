@@ -92,4 +92,6 @@
   "networkTrafficManagerProfiles": "traf-",
   "networkVirtualNetworkGateways": "vgw-",
   "networkVirtualNetworks": "vnet-",
-  "network
+  "networkVirtualNetworksSubnets": "snet-",
+  "networkVirtualNetworksVirtualNetworkPeerings": "peer-",
+  "networkVi
