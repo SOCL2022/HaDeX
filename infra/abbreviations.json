@@ -94,4 +94,6 @@
   "networkVirtualNetworks": "vnet-",
   "networkVirtualNetworksSubnets": "snet-",
   "networkVirtualNetworksVirtualNetworkPeerings": "peer-",
-  "networkVi
+  "networkVirtualWans": "vwan-",
+  "networkVpnGateways": "vpng-",
+  "networkVpnGatewaysVpnConnections": "vcn-"
