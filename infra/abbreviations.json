@@ -96,4 +96,7 @@
   "networkVirtualNetworksVirtualNetworkPeerings": "peer-",
   "networkVirtualWans": "vwan-",
   "networkVpnGateways": "vpng-",
-  "networkVpnGatewaysVpnConnections": "vcn-"
+  "networkVpnGatewaysVpnConnections": "vcn-",
+  "networkVpnGatewaysVpnSites": "vst-",
+  "notificationHubsNamespaces": "ntfns-",
+  "notificationH
