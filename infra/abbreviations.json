@@ -99,4 +99,6 @@
   "networkVpnGatewaysVpnConnections": "vcn-",
   "networkVpnGatewaysVpnSites": "vst-",
   "notificationHubsNamespaces": "ntfns-",
-  "notificationH
+  "notificationHubsNamespacesNotificationHubs": "ntf-",
+  "operationalInsightsWorkspaces": "log-",
+  "portalDashbo
