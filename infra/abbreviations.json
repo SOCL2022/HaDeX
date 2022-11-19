@@ -101,4 +101,6 @@
   "notificationHubsNamespaces": "ntfns-",
   "notificationHubsNamespacesNotificationHubs": "ntf-",
   "operationalInsightsWorkspaces": "log-",
-  "portalDashbo
+  "portalDashboards": "dash-",
+  "powerBIDedicatedCapacities": "pbi-",
+  "purviewAccounts": "pview-",
