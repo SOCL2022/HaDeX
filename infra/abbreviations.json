@@ -108,4 +108,7 @@
   "resourcesResourceGroups": "rg-",
   "searchSearchServices": "srch-",
   "serviceBusNamespaces": "sb-",
-  "serviceBusNamespacesQueues":
+  "serviceBusNamespacesQueues": "sbq-",
+  "serviceBusNamespacesTopics": "sbt-",
+  "serviceEndPointPolicies": "se-",
+  "serviceFabricClus
