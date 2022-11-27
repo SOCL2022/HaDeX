@@ -111,4 +111,7 @@
   "serviceBusNamespacesQueues": "sbq-",
   "serviceBusNamespacesTopics": "sbt-",
   "serviceEndPointPolicies": "se-",
-  "serviceFabricClus
+  "serviceFabricClusters": "sf-",
+  "signalRServiceSignalR": "sigr",
+  "sqlManagedInstances": "sqlmi-",
+  "sqlServers"
