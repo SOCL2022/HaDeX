@@ -114,4 +114,7 @@
   "serviceFabricClusters": "sf-",
   "signalRServiceSignalR": "sigr",
   "sqlManagedInstances": "sqlmi-",
-  "sqlServers"
+  "sqlServers": "sql-",
+  "sqlServersDataWarehouse": "sqldw-",
+  "sqlServersDatabases": "sqldb-",
+  "sqlSe
