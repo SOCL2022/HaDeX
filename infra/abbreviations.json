@@ -117,4 +117,6 @@
   "sqlServers": "sql-",
   "sqlServersDataWarehouse": "sqldw-",
   "sqlServersDatabases": "sqldb-",
-  "sqlSe
+  "sqlServersDatabasesStretch": "sqlstrdb-",
+  "storageStorageAccounts": "st",
+  "storageStorageAccountsVm"
