@@ -122,4 +122,6 @@
   "storageStorageAccountsVm": "stvm",
   "storSimpleManagers": "ssimp",
   "streamAnalyticsCluster": "asa-",
-  "synapseWo
+  "synapseWorkspaces": "syn",
+  "synapseWorkspacesAnalyticsWorkspaces": "synw",
+  "synapseW
