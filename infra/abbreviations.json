@@ -124,4 +124,6 @@
   "streamAnalyticsCluster": "asa-",
   "synapseWorkspaces": "syn",
   "synapseWorkspacesAnalyticsWorkspaces": "synw",
-  "synapseW
+  "synapseWorkspacesSqlPoolsDedicated": "syndp",
+  "synapseWorkspacesSqlPoolsSpark": "synsp",
+  "timeS
