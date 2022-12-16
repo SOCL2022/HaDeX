@@ -129,3 +129,6 @@
   "timeSeriesInsightsEnvironments": "tsi-",
   "webServerFarms": "plan-",
   "webSitesAppService": "app-",
+  "webSitesAppServiceEnvironment": "ase-",
+  "webSitesFunctions": "func-",
+  "webStaticSites"
