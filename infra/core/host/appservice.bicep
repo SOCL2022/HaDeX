@@ -55,3 +55,47 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
       healthCheckPath: healthCheckPath
       cors: {
         allowedOrigins: union([ 'https://portal.azure.com', 'https://ms.portal.azure.com' ], allowedOrigins)
+      }
+    }
+    clientAffinityEnabled: clientAffinityEnabled
+    httpsOnly: true
+  }
+
+  identity: { type: managedIdentity ? 'SystemAssigned' : 'None' }
+
+  resource configAppSettings 'config' = {
+    name: 'appsettings'
+    properties: union(appSettings,
+      {
+        SCM_DO_BUILD_DURING_DEPLOYMENT: string(scmDoBuildDuringDeployment)
+        ENABLE_ORYX_BUILD: string(enableOryxBuild)
+      },
+      !empty(applicationInsightsName) ? { APPLICATIONINSIGHTS_CONNECTION_STRING: applicationInsights.properties.ConnectionString } : {},
+      !empty(keyVaultName) ? { AZURE_KEY_VAULT_ENDPOINT: keyVault.properties.vaultUri } : {})
+  }
+
+  resource configLogs 'config' = {
+    name: 'logs'
+    properties: {
+      applicationLogs: { fileSystem: { level: 'Verbose' } }
+      detailedErrorMessages: { enabled: true }
+      failedRequestsTracing: { enabled: true }
+      httpLogs: { fileSystem: { enabled: true, retentionInDays: 1, retentionInMb: 35 } }
+    }
+    dependsOn: [
+      configAppSettings
+    ]
+  }
+}
+
+resource keyVault 'Microsoft.KeyVault/vaults@2022-07-01' existing = if (!(empty(keyVaultName))) {
+  name: keyVaultName
+}
+
+resource applicationInsights 'Microsoft.Insights/components@2020-02-02' existing = if (!empty(applicationInsightsName)) {
+  name: applicationInsightsName
+}
+
+output identityPrincipalId string = managedIdentity ? appService.identity.principalId : ''
+output name string = appService.name
+output uri string = 'https://${appService.properties.defaultHostName}'
