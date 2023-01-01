@@ -6,3 +6,8 @@ param principalId string
   'Group'
   'ServicePrincipal'
   'User'
+])
+param principalType string = 'ServicePrincipal'
+param roleDefinitionId string
+
+resource role 
