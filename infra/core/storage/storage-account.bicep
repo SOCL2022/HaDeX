@@ -4,3 +4,5 @@ param tags object = {}
 
 @allowed([ 'Hot', 'Cool', 'Premium' ])
 param accessTier string = 'Hot'
+param allowBlobPublicAccess bool = false
+param allowCrossTenantReplication boo
