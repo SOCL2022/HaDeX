@@ -15,4 +15,8 @@ param kind string = 'StorageV2'
 param minimumTlsVersion string = 'TLS1_2'
 @allowed([ 'Enabled', 'Disabled' ])
 param publicNetworkAccess string = 'Disabled'
-param sku object 
+param sku object = { name: 'Standard_LRS' }
+
+param containers array = []
+
+resource storage 'Microsoft.Storage/storageAc
