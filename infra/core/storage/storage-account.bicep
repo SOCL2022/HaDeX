@@ -19,4 +19,10 @@ param sku object = { name: 'Standard_LRS' }
 
 param containers array = []
 
-resource storage 'Microsoft.Storage/storageAc
+resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
+  name: name
+  location: location
+  tags: tags
+  kind: kind
+  sku: sku
+  propert
