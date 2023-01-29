@@ -8,3 +8,6 @@ param allowBlobPublicAccess bool = false
 param allowCrossTenantReplication bool = true
 param allowSharedKeyAccess bool = true
 param defaultToOAuthAuthentication bool = false
+param deleteRetentionPolicy object = {}
+@allowed([ 'AzureDnsZone', 'Standard' ])
+param dnsEndpointType 
