@@ -28,4 +28,5 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   properties: {
     accessTier: accessTier
     allowBlobPublicAccess: allowBlobPublicAccess
-    allowCros
+    allowCrossTenantReplication: allowCrossTenantReplication
+    allowSharedKeyAccess: allowSharedKeyAcces
