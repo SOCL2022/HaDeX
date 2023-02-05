@@ -31,4 +31,8 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
     allowCrossTenantReplication: allowCrossTenantReplication
     allowSharedKeyAccess: allowSharedKeyAccess
     defaultToOAuthAuthentication: defaultToOAuthAuthentication
-    dnsEndpointType: dns
+    dnsEndpointType: dnsEndpointType
+    minimumTlsVersion: minimumTlsVersion
+    networkAcls: {
+      bypass: 'AzureServices'
+      defa
