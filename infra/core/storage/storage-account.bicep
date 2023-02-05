@@ -35,4 +35,9 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
     minimumTlsVersion: minimumTlsVersion
     networkAcls: {
       bypass: 'AzureServices'
-      defa
+      defaultAction: 'Allow'
+    }
+    publicNetworkAccess: publicNetworkAccess
+  }
+
+  resource blobServices 'bl
