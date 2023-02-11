@@ -40,4 +40,7 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
     publicNetworkAccess: publicNetworkAccess
   }
 
-  resource blobServices 'bl
+  resource blobServices 'blobServices' = if (!empty(containers)) {
+    name: 'default'
+    properties: {
+      deleteRete
