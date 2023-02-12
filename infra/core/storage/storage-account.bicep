@@ -43,4 +43,6 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   resource blobServices 'blobServices' = if (!empty(containers)) {
     name: 'default'
     properties: {
-      deleteRete
+      deleteRetentionPolicy: deleteRetentionPolicy
+    }
+    resource container 'containers' = [for container 
