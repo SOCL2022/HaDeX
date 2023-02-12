@@ -45,4 +45,7 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
     properties: {
       deleteRetentionPolicy: deleteRetentionPolicy
     }
-    resource container 'containers' = [for container 
+    resource container 'containers' = [for container in containers: {
+      name: container.name
+      properties: {
+        publicAccess: contains(c
