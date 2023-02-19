@@ -125,3 +125,101 @@ module searchServices 'core/search/search-services.bicep' = {
     location: location
     tags: tags
     authOptions: {
+      aadOrApiKey: {
+        aadAuthFailureMode: 'http401WithBearerChallenge'
+      }
+    }
+    sku: {
+      name: searchServicesSkuName
+    }
+    semanticSearch: 'free'
+  }
+}
+
+module storage 'core/storage/storage-account.bicep' = {
+  name: 'storage'
+  scope: rg
+  params: {
+    name: !empty(storageAccountName) ? storageAccountName : '${abbrs.storageStorageAccounts}${resourceToken}'
+    location: location
+    tags: tags
+    publicNetworkAccess: 'Enabled'
+    sku: {
+      name: 'Standard_ZRS'
+    }
+    deleteRetentionPolicy: {
+      enabled: true
+      days: 2
+    }
+    containers: [
+      {
+        name: 'content'
+        publicAccess: 'None'
+      }
+    ]
+  }
+}
+
+// USER ROLES
+module openAiRoleUser 'core/security/role.bicep' = {
+  scope: rg
+  name: 'openai-role-user'
+  params: {
+    principalId: principalId
+    roleDefinitionId: '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd'
+    principalType: 'User'
+  }
+}
+
+module storageRoleUser 'core/security/role.bicep' = {
+  scope: rg
+  name: 'storage-role-user'
+  params: {
+    principalId: principalId
+    roleDefinitionId: '2a2b9908-6ea1-4ae2-8e65-a410df84e7d1'
+    principalType: 'User'
+  }
+}
+
+module storageContribRoleUser 'core/security/role.bicep' = {
+  scope: rg
+  name: 'storage-contribrole-user'
+  params: {
+    principalId: principalId
+    roleDefinitionId: 'ba92f5b4-2d11-453d-a403-e96b0029c9fe'
+    principalType: 'User'
+  }
+}
+
+module searchRoleUser 'core/security/role.bicep' = {
+  scope: rg
+  name: 'search-role-user'
+  params: {
+    principalId: principalId
+    roleDefinitionId: '1407120a-92aa-4202-b7e9-c0e197c71c8f'
+    principalType: 'User'
+  }
+}
+
+module searchContribRoleUser 'core/security/role.bicep' = {
+  scope: rg
+  name: 'search-contrib-role-user'
+  params: {
+    principalId: principalId
+    roleDefinitionId: '8ebe5a00-799e-43f5-93ac-243d3dce84a7'
+    principalType: 'User'
+  }
+}
+
+// SYSTEM IDENTITIES
+module openAiRoleBackend 'core/security/role.bicep' = {
+  scope: rg
+  name: 'openai-role-backend'
+  params: {
+    principalId: backend.outputs.identityPrincipalId
+    roleDefinitionId: '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd'
+    principalType: 'ServicePrincipal'
+  }
+}
+
+module storageRoleBackend 'core/security/role.bicep' = {
