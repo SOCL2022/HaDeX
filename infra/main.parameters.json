@@ -14,4 +14,10 @@
     "searchServiceName": {
       "value": "${AZURE_SEARCH_SERVICE}"
     },
-    "cognitiveServicesSkuNa
+    "cognitiveServicesSkuName": {
+      "value": "S0"
+    },
+    "searchServicesSkuName": {
+      "value": "standard"
+    }
+ 
