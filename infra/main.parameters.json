@@ -11,4 +11,7 @@
     "principalId": {
       "value": "${AZURE_PRINCIPAL_ID}"
     },
-    "search
+    "searchServiceName": {
+      "value": "${AZURE_SEARCH_SERVICE}"
+    },
+    "cognitiveServicesSkuNa
