@@ -109,3 +109,113 @@ def split_text(pages):
                     last_word = end
                 end += 1
             if end < length and all_text[end] not in SENTENCE_ENDINGS and last_word > 0:
+                end = last_word # Fall back to at least keeping a whole word
+        if end < length:
+            end += 1
+
+        # Try to find the start of the sentence or at least a whole word boundary
+        last_word = -1
+        while start > 0 and start > end - MAX_SECTION_LENGTH - 2 * SENTENCE_SEARCH_LIMIT and all_text[start] not in SENTENCE_ENDINGS:
+            if all_text[start] in WORDS_BREAKS:
+                last_word = start
+            start -= 1
+        if all_text[start] not in SENTENCE_ENDINGS and last_word > 0:
+            start = last_word
+        if start > 0:
+            start += 1
+
+        yield (all_text[start:end], find_page(start))
+        start = end - SECTION_OVERLAP
+        
+    if start + SECTION_OVERLAP < end:
+        yield (all_text[start:end], find_page(start))
+
+def create_sections(filename, pages):
+    for i, (section, pagenum) in enumerate(split_text(pages)):
+        yield {
+            "id": f"{filename}-{i}".replace(".", "_").replace(" ", "_"),
+            "content": section,
+            "category": args.category,
+            "sourcepage": blob_name_from_file_page(filename, pagenum),
+            "sourcefile": filename
+        }
+
+def create_search_index():
+    if args.verbose: print(f"Ensuring search index {args.index} exists")
+    index_client = SearchIndexClient(endpoint=f"https://{args.searchservice}.search.windows.net/",
+                                     credential=search_creds)
+    if args.index not in index_client.list_index_names():
+        index = SearchIndex(
+            name=args.index,
+            fields=[
+                SimpleField(name="id", type="Edm.String", key=True),
+                SearchableField(name="content", type="Edm.String", analyzer_name="en.microsoft"),
+                SimpleField(name="category", type="Edm.String", filterable=True, facetable=True),
+                SimpleField(name="sourcepage", type="Edm.String", filterable=True, facetable=True),
+                SimpleField(name="sourcefile", type="Edm.String", filterable=True, facetable=True)
+            ],
+            semantic_settings=SemanticSettings(
+                configurations=[SemanticConfiguration(
+                    name='default',
+                    prioritized_fields=PrioritizedFields(
+                        title_field=None, prioritized_content_fields=[SemanticField(field_name='content')]))])
+        )
+        if args.verbose: print(f"Creating {args.index} search index")
+        index_client.create_index(index)
+    else:
+        if args.verbose: print(f"Search index {args.index} already exists")
+
+def index_sections(filename, sections):
+    if args.verbose: print(f"Indexing sections from '{filename}' into search index '{args.index}'")
+    search_client = SearchClient(endpoint=f"https://{args.searchservice}.search.windows.net/",
+                                    index_name=args.index,
+                                    credential=search_creds)
+    i = 0
+    batch = []
+    for s in sections:
+        batch.append(s)
+        i += 1
+        if i % 1000 == 0:
+            results = search_client.index_documents(batch=batch)
+            succeeded = sum([1 for r in results if r.succeeded])
+            if args.verbose: print(f"\tIndexed {len(results)} sections, {succeeded} succeeded")
+            batch = []
+
+    if len(batch) > 0:
+        results = search_client.upload_documents(documents=batch)
+        succeeded = sum([1 for r in results if r.succeeded])
+        if args.verbose: print(f"\tIndexed {len(results)} sections, {succeeded} succeeded")
+
+def remove_from_index(filename):
+    if args.verbose: print(f"Removing sections from '{filename or '<all>'}' from search index '{args.index}'")
+    search_client = SearchClient(endpoint=f"https://{args.searchservice}.search.windows.net/",
+                                    index_name=args.index,
+                                    credential=search_creds)
+    while True:
+        filter = None if filename == None else f"sourcefile eq '{os.path.basename(filename)}'"
+        r = search_client.search("", filter=filter, top=1000, include_total_count=True)
+        if r.get_count() == 0:
+            break
+        r = search_client.delete_documents(documents=[{ "id": d["id"] } for d in r])
+        if args.verbose: print(f"\tRemoved {len(r)} sections from index")
+        # It can take a few seconds for search results to reflect changes, so wait a bit
+        time.sleep(2)
+
+if args.removeall:
+    remove_blobs(None)
+    remove_from_index(None)
+else:
+    if not args.remove:
+        create_search_index()
+    
+    print(f"Processing files...")
+    for filename in glob.glob(args.files):
+        if args.verbose: print(f"Processing '{filename}'")
+        if args.remove:
+            remove_blobs(filename)
+            remove_from_index(filename)
+        elif args.removeall:
+            remove_blobs(None)
+            remove_from_index(None)
+        else:
+            reader = PdfReader(filename)
