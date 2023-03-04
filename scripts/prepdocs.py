@@ -219,3 +219,8 @@ else:
             remove_from_index(None)
         else:
             reader = PdfReader(filename)
+            pages = reader.pages
+            if not args.skipblobs:
+                upload_blobs(pages)
+            sections = create_sections(os.path.basename(filename), pages)
+            index_sections(os.path.basename(filename), sections)
